@@ -20,10 +20,6 @@
         "noEmit": true,
         "jsx": "preserve",
         "baseUrl": "./",
-        "paths": {
-        "crypto": [
-        "node_modules/crypto-js"
-        ]},
     },
     "include": [
         "src"
