@@ -36,13 +36,13 @@ const LandingPage = () => {
                                                 Full Stack Developer
                                             </h1>
                                         </div>
-                                        <div className='w-max h-60 flex items-center justify-center'>
+                                        <div className='w-max h-40 flex items-center justify-center'>
                                             <button className='w-max h-10 bg-my-blue text-white rounded-lg m-4 px-4 flex items-center justify-center gap-x-2 font-bold hover:bg-blue-400'>{<AiOutlineDownload/>} Resume</button>
                                         </div>
                                     </div>
                                 </div>
                                 </div>
-                                <div className='w-full h-20 bg-red-300'>
+                                <div className='w-full h-20'>
                                     <div className='w-full h-full flex items-center justify-center'>
                                         <Socials/>
                                     </div>
