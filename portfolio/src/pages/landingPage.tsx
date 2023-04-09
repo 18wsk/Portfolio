@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import React from 'react'
+import { useState } from 'react'
 import NavBar from 'src/components/navBar';
 import PageSection from 'src/components/pageSection';
 import { AiOutlineDownload } from 'react-icons/ai';
@@ -8,12 +8,13 @@ import Socials from 'src/components/socials';
 const LandingPage = () => {
     const pfp =  require("../assets/will_pfp.jpg");
     const resume = require("../assets/William_Kennedy_Resume.pdf");
+    const [active, setActive] = useState<string>("home");
 
     return (
         <div className='bg-white fixed w-screen h-screen overflow-scroll scrollbar-hide scroll-smooth md:scrollbar-default snap-mandatory snap-y'>
-            <NavBar/>
+            <NavBar setActive={setActive} active={active}/>
             <PageSection>
-                <div className='w-full h-full relative z-0' id="home">
+                <div className='w-full h-full relative z-0' id="home" onMouseOver={() => setActive("home")}>
                     <div className='w-full h-full flex items-center justify-center'>
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -56,8 +57,23 @@ const LandingPage = () => {
                 </div>
             </PageSection>
             <PageSection>
-                <div className='w-full h-full relative z-0' id="about">
-                    <p>hello</p>
+                <div className='w-full h-full relative z-0' id="about" onMouseOver={() => setActive("about")}>
+                    <p>About Me</p>
+                </div>
+            </PageSection>
+            <PageSection>
+                <div className='w-full h-full relative z-0' id="skills" onMouseOver={() => setActive("skills")}>
+                    <p>Skills</p>
+                </div>
+            </PageSection>
+            <PageSection>
+                <div className='w-full h-full relative z-0' id="experience" onMouseOver={() => setActive("experience")}>
+                    <p>Experience</p>
+                </div>
+            </PageSection>
+            <PageSection>
+                <div className='w-full h-full relative z-0' id="contact" onMouseOver={() => setActive("contact")}>
+                    <p>Contact</p>
                 </div>
             </PageSection>
         </div>
