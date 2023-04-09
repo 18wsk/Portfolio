@@ -22,7 +22,7 @@ const LandingPage = () => {
                             <div className='w-full h-full grid grid-rows-2 gap-x-12'>
                                 <div className='w-max h-full grid place-items-center lg:grid-cols-2 lg:gap-x-12 '>
                                     <div className='w-max h-max xs:pt-20 lg:pt-0 flex items-center'>
-                                        <img src={pfp} alt="logo" className='flex rounded-full border-solid border-4 border-my-blue xs:h-50 xs:w-60 lg:w-[480px] lg:h-[480px]'/>
+                                        <img src={pfp} alt="logo" className='mx-auto flex rounded-full border-solid border-4 border-my-blue xs:h-50 xs:w-60 lg:w-[480px] lg:h-[480px]'/>
                                     </div>
                                     <div className='w-max h-max whitespace-pre-line'> 
                                         <h1 className='lg:text-xl font-bold text-black pb-12 xs:hidden lg:block'>Hi, I'm</h1>
