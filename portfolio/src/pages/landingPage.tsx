@@ -20,8 +20,8 @@ const LandingPage = () => {
                         >
                         <div className='absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/4'>
                             <div className='w-full h-full grid grid-rows-2 gap-x-12'>
-                                <div className='w-max h-full grid place-items-center lg:grid-cols-2 lg:gap-x-12 '>
-                                    <div className='w-full h-full xs:pt-20 lg:pt-0 flex items-center mx-auto'>
+                                <div className='lg:w-max xs:w-screen h-full grid place-items-center lg:grid-cols-2 lg:gap-x-12 xs:gap-y-4'>
+                                    <div className='w-full h-full xs:pt-20 lg:pt-0 mx-auto'>
                                         <img src={pfp} alt="logo" className='mx-auto flex rounded-full border-solid border-4 border-my-blue xs:h-50 xs:w-60 lg:w-[480px] lg:h-[480px]'/>
                                     </div>
                                     <div className='w-max h-max whitespace-pre-line'> 
