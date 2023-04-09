@@ -12,7 +12,7 @@ const LandingPage = () => {
             <NavBar/>
             <PageSection>
                 <div className='w-full h-full relative z-0' id="home">
-                    <div className='w-full h-full'>
+                    <div className='w-full h-full flex items-center'>
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -20,7 +20,7 @@ const LandingPage = () => {
                         >
                         <div className='absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/4'>
                             <div className='w-full h-full grid grid-rows-2 gap-x-12'>
-                                <div className='w-max h-full grid lg:grid-cols-2 lg:gap-x-12 place-items-center'>
+                                <div className='w-max h-full grid place-items-center lg:grid-cols-2 lg:gap-x-12 '>
                                     <div className='w-max h-max xs:pt-20 lg:pt-0'>
                                         <img src={pfp} alt="logo" className='flex rounded-full border-solid border-4 border-my-blue xs:h-50 xs:w-60 lg:w-[480px] lg:h-[480px]'/>
                                     </div>
