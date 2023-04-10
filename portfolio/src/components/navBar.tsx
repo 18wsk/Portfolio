@@ -12,27 +12,27 @@ const NavBar: FC<{
             </div>
             <div className='w-full h-full flex lg:justify-end xs:justify-center'>
                 <div className='lg:w-1/2 xs:w-full h-full grid grid-cols-5 gap-4 place-items-center'>
-                    <a className={`lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "home" && "decoration-my-blue underline underline-offset-4"}`} 
+                    <a className={`font-poppins lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "home" && "decoration-black underline underline-offset-4 font-bold"}`} 
                         href="#home" 
                         onClick={()=> props.setActive("home")}>
                         Home
                     </a>
-                    <a className={`lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "about" && "decoration-my-blue underline underline-offset-4"}`} 
+                    <a className={`font-poppins lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "about" && "decoration-black underline underline-offset-4 font-bold"}`} 
                         href="#about" 
                         onClick={()=> props.setActive("about")}>
                         About Me
                     </a>
-                    <a className={`lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "skills" && "decoration-my-blue underline underline-offset-4"}`} 
+                    <a className={`font-poppins lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "skills" && "decoration-black underline underline-offset-4 font-bold"}`} 
                         href="#skills" 
                         onClick={()=> props.setActive("skills")}>
                         Skils
                     </a>
-                    <a className={`lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "experience" && "decoration-my-blue underline underline-offset-4"}`} 
+                    <a className={`font-poppins lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "experience" && "decoration-black underline underline-offset-4 font-bold"}`} 
                         href="#experience" 
                         onClick={()=> props.setActive("experience")}>
                         Experience
                     </a>
-                    <a className={`lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold  ${props.active === "contact" && "decoration-my-blue underline underline-offset-4"}`} 
+                    <a className={`font-poppins lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold  ${props.active === "contact" && "decoration-black underline underline-offset-4 font-bold"}`} 
                         href="#contact" 
                         onClick={()=> props.setActive("contact")}>
                         Contact

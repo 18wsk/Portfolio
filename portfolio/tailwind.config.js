@@ -15,6 +15,9 @@ module.exports = {
         "page-bg": '#f3f2ef',
         "my-blue": "#8AAAE5"
       },
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif']
+      },
       keyframes: {
         typing: {
           "0%": {
