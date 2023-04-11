@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react'
+import { Fragment, useState } from 'react'
 import NavBar from 'src/components/navBar';
 import PageSection from 'src/components/pageSection';
 import { AiOutlineDownload } from 'react-icons/ai';
@@ -72,7 +72,7 @@ const LandingPage = () => {
                                 damping: 40,
                             }}
                             viewport={{ once: true }}
-                            className='w-full h-full flex items-center justify-center pt-24 relative'
+                            className='w-full h-full flex items-center justify-center p-24 relative'
                         >
                             <div className='absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/4'>
                                 <div className='w-full h-full grid grid-rows-2 gap-x-12'>
@@ -108,16 +108,16 @@ const LandingPage = () => {
             </PageSection>
             <PageSection>
                 <div className='w-full h-full relative z-0' id="about" >
-                <motion.div
-                    whileInView={{ y: 0, opacity: 1 }}
-                    initial={{ y: 100, opacity: 0 }}
-                    transition={{
-                        duration: 0.6,
-                        type: "spring",
-                        damping: 40,
-                    }}
-                    viewport={{ once: true }}
-                    className='w-full h-full flex items-center justify-center lg:pt-20 xs:pt-0 relative'
+                    <motion.div
+                        whileInView={{ y: 0, opacity: 1 }}
+                        initial={{ y: 100, opacity: 0 }}
+                        transition={{
+                            duration: 0.6,
+                            type: "spring",
+                            damping: 40,
+                        }}
+                        viewport={{ once: true }}
+                        className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative xs:hidden sm:flex'
                     >
                         <div className='w-full h-full'>
                             <div className="w-full h-max xs:pt-4 lg:pt-0 justify-center ">
@@ -125,15 +125,15 @@ const LandingPage = () => {
                             </div>
                             <Tab.Group>
                                 <Tab.List className="w-full h-max flex items-center justify-center space-x-4 lg:py-10 xs:py-4">
-                                    <Tab className={({ selected }) => (`border-2 rounded-full md:text-lg xs:text-sm shadow-xl outline-none ${selected && "border-blue-700 bg-my-blue text-white"} hover:border-blue-700`)}>
+                                    <Tab key={0} className={({ selected }) => (`border-2 rounded-full md:text-lg xs:text-sm shadow-xl outline-none ${selected && "border-blue-700 bg-my-blue text-white"} hover:border-blue-700`)}>
                                         <h1 className='font-poppins text-center p-2'>Background</h1>
                                     </Tab>
-                                    <Tab className={({ selected }) => (`border-2 rounded-full md:text-lg xs:text-sm shadow-xl outline-none ${selected && "border-blue-700 bg-my-blue text-white"} hover:border-blue-700`)}> 
+                                    <Tab key={1} className={({ selected }) => (`border-2 rounded-full md:text-lg xs:text-sm shadow-xl outline-none ${selected && "border-blue-700 bg-my-blue text-white"} hover:border-blue-700`)}> 
                                         <h1 className='font-poppins text-center p-2'>Hobbies</h1>
                                     </Tab>
                                 </Tab.List>
-                                <Tab.Panels className="h-full w-full">
-                                    <Tab.Panel className='w-full h-full flex justify-center'>
+                                <Tab.Panels className="h-full w-full flex">
+                                    <Tab.Panel className='w-full h-full flex justify-center overflow-auto' key={0}>
                                         <motion.div
                                             whileInView={{ y: 0, x:0, opacity: 1 }}
                                             initial={{ y: 0, x: 400,  opacity: 0 }}
@@ -157,7 +157,7 @@ const LandingPage = () => {
                                         </div>
                                         </motion.div>
                                     </Tab.Panel>
-                                    <Tab.Panel className='w-full h-full flex justify-center overflow-auto'>
+                                    <Tab.Panel className='w-full h-full flex justify-center overflow-auto' key={1}>
                                         <motion.div
                                             whileInView={{ y: 0, x:0, opacity: 1 }}
                                             initial={{ y: 0, x: 400,  opacity: 0 }}
@@ -168,7 +168,7 @@ const LandingPage = () => {
                                                 damping: 10,
                                             }}
                                             viewport={{ once: true }}
-                                            className='lg:w-2/3 lg:h-max xs:w-3/4 xs:h-2/3 rounded-xl md:shadow-2xl xs:shadow-md font-poppins md:p-10 xs:p-4 bg-gray-50 md:text-2xl xs:text-md'
+                                            className='lg:w-2/3 lg:h-max xs:w-3/4 xs:h-2/3 rounded-xl md:shadow-2xl xs:shadow-md font-poppins md:p-10 xs:p-4 bg-gray-50 md:text-lg lg:text-xl xs:text-md'
                                         > 
                                             <div className='w-full h-full overflow-auto scrollbar-hide'>
                                                 <div className='w-full h-12 flex'>
@@ -190,6 +190,46 @@ const LandingPage = () => {
                                     </Tab.Panel>
                                 </Tab.Panels>
                             </Tab.Group>
+                        </div>
+                    </motion.div>
+                    <motion.div
+                        whileInView={{ y: 0, opacity: 1 }}
+                        initial={{ y: 100, opacity: 0 }}
+                        transition={{
+                            duration: 0.6,
+                            type: "spring",
+                            damping: 40,
+                        }}
+                        viewport={{ once: true }}
+                        className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative sm:hidden xs:flex'
+                    >
+                        <div className='w-3/4 h-full '>
+                            <div className="w-full h-max xs:pt-4 lg:pt-0 justify-center ">
+                                <h1 className='font-poppins font-bold lg:text-[4rem] xs:text-3xl text-center pb-4 decoration-my-blue underline underline-offset-8'>About me</h1>
+                            </div>
+                            <div className='w-full h-content font-poppins text-sm px-2 bg-gray-50 rounded-xl shadow-xl p-4 '>
+                                Nice to meet you, 
+                                <br/><br/>
+                                I recently graduated from Queen's University
+                                where I recieved my bachelors degree in Computer Engineering. 
+                                Along with my education I have just under 2 years of professional experience working as a Full Stack developer at a startup based in Toronto, Ontario.
+                                <br/> <br/>
+                                I am currently looking for a full time position as a software developer!
+                            </div>
+                            <div className="w-full pt-10">
+                                <div className='flex flex-row'> 
+                                    <p className='font-bold font-popins text-xs'>Location: </p> <p className='font-poppins pl-2 text-xs'>Kingston, Ontario CA</p>
+                                </div>
+                                <div className='flex flex-row'> 
+                                    <p className='font-bold font-popins text-xs'>Hobbies: </p> <p className='font-poppins pl-2 text-xs'>Video Games, Fitness, Camping</p>
+                                </div>
+                                <div className='flex flex-row'> 
+                                    <p className='font-bold font-popins text-xs'>Availibility: </p> <p className='font-poppins pl-2 text-xs'>Open for work</p>
+                                </div>
+                                <div className='flex flex-row'> 
+                                    <p className='font-bold font-popins text-xs'>Willing to relocate: </p> <p className='font-poppins pl-2 text-xs'>Yes</p>
+                                </div>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
