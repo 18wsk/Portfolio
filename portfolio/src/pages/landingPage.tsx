@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion';
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import NavBar from 'src/components/navBar';
 import PageSection from 'src/components/pageSection';
 import { AiOutlineDownload } from 'react-icons/ai';
 import Socials from 'src/components/socials';
 import { Tab } from '@headlessui/react';
-import { MdFitnessCenter, MdOutlineGamepad } from 'react-icons/md';
+import { MdFitnessCenter } from 'react-icons/md';
 import { GiForestCamp } from 'react-icons/gi';
+import { IoLogoGameControllerB } from 'react-icons/io';
 
 const LandingPage = () => {
     const pfp =  require("../assets/will_pfp.jpg");
@@ -72,13 +73,13 @@ const LandingPage = () => {
                                 damping: 40,
                             }}
                             viewport={{ once: true }}
-                            className='w-full h-full flex items-center justify-center p-24 relative'
+                            className='w-full h-full flex items-center justify-center relative'
                         >
                             <div className='absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/4'>
                                 <div className='w-full h-full grid grid-rows-2 gap-x-12'>
-                                    <div className='lg:w-max xs:w-screen h-full grid place-items-center lg:grid-cols-2 lg:gap-x-12 xs:gap-y-4 pt-24'>
+                                    <div className='lg:w-max xs:w-screen h-full grid place-items-center lg:grid-cols-2 lg:gap-x-12 xs:gap-y-4 '>
                                         <div className='w-full h-full xs:pt-20 lg:pt-0 mx-auto'>
-                                            <img src={pfp} alt="logo" className='mx-auto flex rounded-full border-solid border-4 border-my-blue xs:h-50 xs:w-60 lg:w-[480px] lg:h-[480px]'/>
+                                            <img src={pfp} alt="logo" className='mx-auto flex shrink rounded-full border-solid border-4 border-my-blue xs:h-50 xs:w-60 lg:w-[480px] lg:h-[480px]'/>
                                         </div>
                                         <div className='w-max h-max whitespace-pre-line'> 
                                             <h1 className='font-poppins lg:text-xl font-bold text-black pb-12 xs:hidden lg:block'>Hi, I'm</h1>
@@ -117,7 +118,7 @@ const LandingPage = () => {
                             damping: 40,
                         }}
                         viewport={{ once: true }}
-                        className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative xs:hidden sm:flex'
+                        className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative xs:hidden sm:hidden md:flex'
                     >
                         <div className='w-full h-full'>
                             <div className="w-full h-max xs:pt-4 lg:pt-0 justify-center ">
@@ -133,7 +134,7 @@ const LandingPage = () => {
                                     </Tab>
                                 </Tab.List>
                                 <Tab.Panels className="h-full w-full flex">
-                                    <Tab.Panel className='w-full h-full flex justify-center overflow-auto' key={0}>
+                                    <Tab.Panel className='w-full h-full flex justify-center overflow-auto scrollbar-hide' key={0}>
                                         <motion.div
                                             whileInView={{ y: 0, x:0, opacity: 1 }}
                                             initial={{ y: 0, x: 400,  opacity: 0 }}
@@ -157,7 +158,7 @@ const LandingPage = () => {
                                         </div>
                                         </motion.div>
                                     </Tab.Panel>
-                                    <Tab.Panel className='w-full h-full flex justify-center overflow-auto' key={1}>
+                                    <Tab.Panel className='w-full h-3/4 grid grid-cols-3 gap-x-12 px-12' key={1}>
                                         <motion.div
                                             whileInView={{ y: 0, x:0, opacity: 1 }}
                                             initial={{ y: 0, x: 400,  opacity: 0 }}
@@ -165,26 +166,62 @@ const LandingPage = () => {
                                             transition={{
                                                 duration: 0.6,
                                                 type: "spring",
-                                                damping: 10,
+                                                damping: 5,
                                             }}
                                             viewport={{ once: true }}
-                                            className='lg:w-2/3 lg:h-max xs:w-3/4 xs:h-2/3 rounded-xl md:shadow-2xl xs:shadow-md font-poppins md:p-10 xs:p-4 bg-gray-50 md:text-lg lg:text-xl xs:text-md'
+                                            className='w-full h-3/4'
                                         > 
-                                            <div className='w-full h-full overflow-auto scrollbar-hide'>
-                                                <div className='w-full h-12 flex'>
-                                                    <MdFitnessCenter className='fill-my-blue h-full w-full'/>
-                                                    <MdOutlineGamepad className='fill-my-blue h-full w-full'/>
-                                                    <GiForestCamp className='fill-my-blue h-full w-full'/> 
+                                            <div className='h-full overflow-auto scrollbar-hide rounded-xl bg-gray-50 shadow-xl w-full p-4'>
+                                                <div className='w-full h-1/3 flex justify-center items-center'>
+                                                    <MdFitnessCenter className='p-4 fill-my-blue h-full w-full max-w-[189.31px] max-h-[189.31px] drop-shadow-2xl bg-gray-50 rounded-full'/>
                                                 </div>
-                                                <div>
+                                                <p className='lg:text-2xl md:text-lg font-poppins h-2/3 flex items-center'>
                                                     When I'm not working, you can often find me hitting the gym, challenging myself with different workout routines, and striving to stay fit and healthy.
-                                                    <br/><br/>
-                                                    I'm also an avid gamer who is obsessed with video games and loves exploring the latest technologies and platforms that enhance the gaming experience. 
-                                                    <br/><br/>
-                                                    Lastly, I enjoy camping and disconnecting from technology to connect with nature.
-                                                    <br/><br/>
-                                                    These hobbies provide me with a sense of balance and allow me to recharge my batteries so that I can bring my best self to any challenge that comes my way.
+                                                </p>
+                                            </div>
+                                        </motion.div>
+                                        <motion.div
+                                            whileInView={{ y: 0, x:0, opacity: 1 }}
+                                            initial={{ y: 0, x: 400,  opacity: 0 }}
+                                            exit={{ y: 0, x: -400,  opacity: 0 }}
+                                            transition={{
+                                                duration: 0.6,
+                                                type: "spring",
+                                                damping: 5,
+                                                delay: 0.25,
+                                            }}
+                                            viewport={{ once: true }}
+                                            className='w-full h-3/4'
+                                        > 
+                                            <div className='h-full overflow-auto scrollbar-hide rounded-xl bg-gray-50 shadow-xl w-full p-4'>
+                                                <div className='w-full h-1/3 flex justify-center items-center'>
+                                                    <IoLogoGameControllerB className='p-4 fill-my-blue h-full w-full max-w-[189.31px] max-h-[189.31px] drop-shadow-2xl bg-gray-50 rounded-full'/>
                                                 </div>
+                                                <p className='lg:text-2xl md:text-lg font-poppins h-2/3 flex items-center'>
+                                                    I'm also an avid gamer who is obsessed with video games and loves exploring the latest technologies and platforms that enhance the gaming experience. 
+                                                </p>
+                                            </div>
+                                        </motion.div>
+                                        <motion.div
+                                            whileInView={{ y: 0, x:0, opacity: 1 }}
+                                            initial={{ y: 0, x: 400,  opacity: 0 }}
+                                            exit={{ y: 0, x: -400,  opacity: 0 }}
+                                            transition={{
+                                                duration: 0.6,
+                                                type: "spring",
+                                                damping: 5,
+                                                delay: 0.5,
+                                            }}
+                                            viewport={{ once: true }}
+                                            className='w-full h-3/4'
+                                        > 
+                                            <div className='h-full overflow-auto scrollbar-hide rounded-xl bg-gray-50 shadow-xl w-full p-4'>
+                                                <div className='w-full h-1/3 flex justify-center items-center'>
+                                                    <GiForestCamp className='p-4 fill-my-blue h-full w-full max-w-[189.31px] max-h-[189.31px] drop-shadow-2xl bg-gray-50 rounded-full'/>
+                                                </div>
+                                                <p className='lg:text-2xl md:text-lg font-poppins h-2/3 flex items-center'>
+                                                    Lastly, I enjoy camping, fishing and hiking. I love taking the opportunity to disconnect from technology to connect with nature.
+                                                </p>
                                             </div>
                                         </motion.div>
                                     </Tab.Panel>
@@ -201,9 +238,9 @@ const LandingPage = () => {
                             damping: 40,
                         }}
                         viewport={{ once: true }}
-                        className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative sm:hidden xs:flex'
+                        className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative sm:flex xs:flex md:hidden'
                     >
-                        <div className='w-3/4 h-full '>
+                        <div className='w-3/4 h-full'>
                             <div className="w-full h-max xs:pt-4 lg:pt-0 justify-center ">
                                 <h1 className='font-poppins font-bold lg:text-[4rem] xs:text-3xl text-center pb-4 decoration-my-blue underline underline-offset-8'>About me</h1>
                             </div>
