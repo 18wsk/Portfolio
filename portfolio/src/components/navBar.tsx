@@ -1,12 +1,56 @@
-import type { FC } from "react";
+import { useEffect, type FC, useRef } from "react";
 
-const NavBar: FC<{
-    setActive: (id: string) => void;
-    active: string;
-    }> = (props) => {
+const NavBar: FC<{ setActive: (id: string) => void; active: string;}> = (props) => {
     const Logo =  require("../assets/logo.png");
+
+    useEffect(() => {
+        const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5,
+        };
+    
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    switch (entry.target.id) {
+                        case "home":
+                            props.setActive("home");
+                            break;
+                        case "about":
+                            props.setActive("about");
+                            break;
+                        case "skills":
+                            props.setActive("skills");
+                            break;
+                        case "experience":
+                            props.setActive("experience");
+                            break;
+                        case "contact":
+                            props.setActive("contact");
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            });
+        }, options);
+    
+        observer.observe(document.getElementById("home")!);
+        observer.observe(document.getElementById("about")!);
+        observer.observe(document.getElementById("skills")!);
+        observer.observe(document.getElementById("experience")!);
+        observer.observe(document.getElementById("contact")!);
+    
+        return () => {
+            observer.disconnect();
+        };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [props.active]);
+    
+
     return (
-        <div className='w-screen fixed h-20 bg-page-white flex flex-row bg-white z-50'>
+        <div className='w-screen fixed h-20 bg-page-white flex flex-row bg-white z-50 shadow-xl'>
             <div className='w-fit h-full lg:px-8 lg:flex lg:items-center md:hidden sm:hidden xs:hidden'>
                 <img src={Logo} alt="logo"/>
             </div>
