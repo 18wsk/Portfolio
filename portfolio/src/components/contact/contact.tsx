@@ -12,17 +12,12 @@ const Contact = () => {
     })
 
     const sendEmail = async () => {
-        if (formData.name !== "" && formData.message !== "" && formData.contact !== "") {
-            await emailjs.send('service_nr375yv', 'template_dldwu8r', formData, "uAZqooKamZXIcA_qD")
-            .then(function() {
-                toast("success");
-            }, function() {
-                toast("Could not send email, please try again!")
-            });
-        } else {
-            console.log(formData)
-            toast("Please fill all the fields!")
-        }
+        await emailjs.send('service_nr375yv', 'template_dldwu8r', formData, "uAZqooKamZXIcA_qD")
+        .then(async function() {
+            await toast("success");
+        }).catch(async function() {
+            await toast("Could not send email, please try again!")
+        });
     }
 
 
