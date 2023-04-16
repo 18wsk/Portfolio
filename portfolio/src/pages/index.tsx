@@ -10,6 +10,7 @@ import AboutMeDesktop from 'src/components/about/aboutMe_desktop';
 import HardSkills from 'src/components/skills/HardSkills';
 import SoftSkills from 'src/components/skills/SoftSkills';
 import Timeline from 'src/components/experience/Timeline';
+import Contact from 'src/components/contact/contact';
 
 const LandingPage = () => {
     const pfp =  require("../assets/will_pfp.jpg");
@@ -191,12 +192,13 @@ const LandingPage = () => {
                             damping: 40,
                         }}
                         viewport={{ once: true }}
-                        className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative xs:hidden sm:hidden md:flex'
+                        className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative'
                     >
                         <div className='w-full h-full'>
                             <div className="w-full h-max xs:pt-4 lg:pt-0 justify-center ">
                                 <h1 className='font-poppins font-bold lg:text-[4rem] xs:text-3xl text-center pb-4 decoration-my-blue underline underline-offset-8'>Contact</h1>
                             </div>
+                            <Contact/>
                         </div>
                     </motion.div>
                 </div>
