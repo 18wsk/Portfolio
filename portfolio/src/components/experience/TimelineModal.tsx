@@ -14,7 +14,7 @@ const TimelineModal = ({
     }
     ) => {
     return (
-        <>
+        <>  
             <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-4 dark:bg-my-blue">
             </span>
             <h3 className="text-md font-semibold text-gray-900">{title}</h3>

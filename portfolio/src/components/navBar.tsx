@@ -1,4 +1,4 @@
-import { useEffect, type FC, useRef } from "react";
+import { useEffect, type FC } from "react";
 
 const NavBar: FC<{ setActive: (id: string) => void; active: string;}> = (props) => {
     const Logo =  require("../assets/logo.png");
@@ -69,7 +69,7 @@ const NavBar: FC<{ setActive: (id: string) => void; active: string;}> = (props) 
                     <a className={`font-poppins lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "skills" && "decoration-black underline underline-offset-4 font-bold"}`} 
                         href="#skills" 
                         onClick={()=> props.setActive("skills")}>
-                        Skils
+                        Skills
                     </a>
                     <a className={`font-poppins lg:text-md md:text-sm sm:text-xs xs:text-xs w-full text-center hover:font-bold ${props.active === "experience" && "decoration-black underline underline-offset-4 font-bold"}`} 
                         href="#experience" 

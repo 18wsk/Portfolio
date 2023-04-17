@@ -40,7 +40,7 @@ const Timeline = () => {
                         }
                     />
                 </li>                 
-                <li className="mb-4 ml-6">
+                <li className="mb-4 ml-6 ">
                     <TimelineModal 
                         title="Enrolled in school for Engineering" 
                         date="Sept, 2018" 
@@ -49,6 +49,11 @@ const Timeline = () => {
                             `Started off in a general first year engineering program, but quickly realized that I wanted to specialize in software development.`
                         }
                     />
+                </li>
+                <li className="mb-4 ml-6">
+                    <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-4 dark:bg-my-blue">
+                    </span>
+                    <p className='text-white'>W</p>
                 </li>
             </ol>
         </div>

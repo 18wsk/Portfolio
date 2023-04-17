@@ -54,9 +54,9 @@ const SoftSkills = () => {
                 <p className='font-poppins font-bold lg:text-[2rem] xs:text-lg text-center lg:pb-4'>Soft Skills</p>
                 <BarStat name="Communication" val={90}/>
                 <BarStat name="Adaptability" val={80}/>
-                <BarStat name="Teamwork" val={75}/>
-                <BarStat name="Problem-Solving" val={70}/>
-                <BarStat name="Leadership" val={70}/>
+                <BarStat name="Teamwork" val={85}/>
+                <BarStat name="Problem-Solving" val={80}/>
+                <BarStat name="Leadership" val={80}/>
             </div>
         </div>
     </motion.div>
