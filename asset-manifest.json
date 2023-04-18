@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.cf030ab2.css",
-    "main.js": "/Portfolio/static/js/main.083adffb.js",
+    "main.js": "/Portfolio/static/js/main.f6d6f878.js",
     "static/media/William_Kennedy_Resume.pdf": "/Portfolio/static/media/William_Kennedy_Resume.b3615d18859acdd8b48e.pdf",
     "static/media/will_pfp.jpg": "/Portfolio/static/media/will_pfp.4e60ed2cfbce23ba6046.jpg",
     "static/media/github.png": "/Portfolio/static/media/github.c28157079e9ae632e7d0.png",
@@ -15,10 +15,10 @@
     "static/media/python.png": "/Portfolio/static/media/python.b17f160a9c0429792c59.png",
     "index.html": "/Portfolio/index.html",
     "main.cf030ab2.css.map": "/Portfolio/static/css/main.cf030ab2.css.map",
-    "main.083adffb.js.map": "/Portfolio/static/js/main.083adffb.js.map"
+    "main.f6d6f878.js.map": "/Portfolio/static/js/main.f6d6f878.js.map"
   },
   "entrypoints": [
     "static/css/main.cf030ab2.css",
-    "static/js/main.083adffb.js"
+    "static/js/main.f6d6f878.js"
   ]
 }
