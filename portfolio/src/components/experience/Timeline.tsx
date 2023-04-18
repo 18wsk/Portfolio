@@ -7,18 +7,6 @@ const Timeline = () => {
             <ol className="relative border-l border-gray-700">
                 <li className="mb-4 ml-6">
                     <TimelineModal 
-                        title="TBD" 
-                        date="(Present)" 
-                        location={""} 
-                        description={
-                            `I have recently graduated from Queen's University with a Bachelors of Engineering in Computer Engineering. 
-                            I also have parted ways with CarbonGraph after a great almost 2 years. I am currently looking for a full time
-                            position as a Full Stack developer!`
-                        }
-                    />
-                </li>
-                <li className="mb-4 ml-6">
-                    <TimelineModal 
                         title="Full Stack Developer" 
                         date="Jan, 2022 - April, 2023" 
                         location={"CarbonGraph - (Remote) Toronto, ON"} 
