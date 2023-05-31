@@ -12,6 +12,10 @@ const HardSkills = () => {
     const react = require('../../assets/react.png');
     const github = require('../../assets/github.png');
     const jira = require('../../assets/jira.png');
+    const trpc = require('../../assets/trpc.png');
+    const mongo = require('../../assets/mongodb-logo.png');
+    const reactQuery = require('../../assets/rq-logo.png');
+    const agile = require('../../assets/agile.png');
     
     const items: any = [
         {img: react, name: "React", value: 80 }, 
@@ -22,7 +26,12 @@ const HardSkills = () => {
         {img: api, name: "RESTful API's", value: 80 } , 
         {img: github, name: "GitHub", value: 90 } , 
         {img: jira, name: "Jira/Agile Methods", value: 85 } , 
-        {img: python, name: "Python", value: 80 } 
+        {img: python, name: "Python", value: 80 },
+        {img: trpc, name: "TRPC", value: 80 },
+        {img: mongo, name: "MongoDB", value: 80 },
+        {img: reactQuery, name: "React-Query", value: 80 },
+        {img: agile, name: "Agile/Scrum", value: 80 }
+
     ];
 
     
@@ -38,11 +47,8 @@ const HardSkills = () => {
             viewport={{ once: true }}
             className='w-full h-full flex items-center justify-center'
         >
-            <div className='w-full h-full lg:p-10'>
-                <div className='w-full flex items-center justify-center gap-x-4 xs:pb-1 lg:pb-4'>
-                    <p className='font-poppins font-bold lg:text-[2rem] xs:text-lg text-center lg:pb-4'>Hard Skills</p>
-                </div>
-                <div className='w-full h-full flex items-top justify-center overflow-hidden'>
+            <div className='w-full h-full lg:p-10 flex items-center justify-center'>
+                <div className='w-full h-full flex items-center justify-center overflow-hidden'>
                     <Banner items={items}/>
                 </div>
             </div>

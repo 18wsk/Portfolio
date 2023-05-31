@@ -140,20 +140,11 @@ const LandingPage = () => {
                         className='w-full h-full items-center justify-center lg:pt-10 xs:pt-0 relative '
                     >
                         <div className='w-full h-full'>
-                            <div className="w-full h-max xs:pt-4 lg:pt-0 xs:hidden lg:flex justify-center">
+                            <div className="w-full h-max xs:pt-4 lg:pt-0  lg:flex justify-center">
                                 <h1 className='font-poppins font-bold lg:text-[4rem] xs:text-3xl text-center pb-4 decoration-my-blue underline underline-offset-8'>Skills</h1>
                             </div>
-                            <div className='xs:hidden lg:grid w-full h-full grid grid-cols-2 gap-x-12 p-12'>
-                                <SoftSkills/>
+                            <div className='flex flex-col items-center justify-center w-full h-full'>
                                 <HardSkills />
-                            </div>
-                            <div className='xs:grid lg:hidden w-full h-full grid-rows-2 p-4'>
-                                <div className=''>
-                                    <SoftSkills/>
-                                </div>
-                                <div className=''>
-                                    <HardSkills />
-                                </div>
                             </div>
                         </div>
                     </motion.div>
