@@ -45,7 +45,7 @@ const Banner = ({items}: {items: any[]}) => {
                     {items.map((item: any, index: number) => (
                         <div key={index} className="flex flex-col justify-center items-center" style={{ minWidth: '100%' }}>
                             <img src={item.img} alt={item.name} className="object-contain aspect-auto w-full h-3/4 xs:pb-10 lg:pt-4"/>
-                            <p className='font-poppins font-semibold'>{`{ ${item.name} }`}</p>
+                            <p className='font-lato font-semibold'>{`{ ${item.name} }`}</p>
                         </div>
                     ))}
                 </div>

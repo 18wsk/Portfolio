@@ -15,9 +15,9 @@ const AboutMeMobile = () => {
             >
             <div className='w-3/4 h-full'>
                 <div className="w-full h-max xs:pt-4 lg:pt-0 justify-center ">
-                    <h1 className='font-poppins font-bold lg:text-[4rem] xs:text-3xl text-center pb-4 decoration-my-blue underline underline-offset-8'>About me</h1>
+                    <h1 className='font-lato font-bold lg:text-[4rem] xs:text-3xl text-center pb-4 decoration-my-blue underline underline-offset-8'>About me</h1>
                 </div>
-                <div className='w-full h-content font-poppins text-sm px-2 bg-gray-50 rounded-xl shadow-xl p-4 '>
+                <div className='w-full h-content font-lato text-sm px-2 bg-gray-50 rounded-xl shadow-xl p-4 '>
                     Nice to meet you, 
                     <br/><br/>
                     I recently graduated from Queen's University
@@ -28,16 +28,16 @@ const AboutMeMobile = () => {
                 </div>
                 <div className="w-full pt-10">
                     <div className='flex flex-row'> 
-                        <p className='font-bold font-popins text-xs'>Location: </p> <p className='font-poppins pl-2 text-xs'>Kingston, Ontario CA</p>
+                        <p className='font-bold font-popins text-xs'>Location: </p> <p className='font-lato pl-2 text-xs'>Kingston, Ontario CA</p>
                     </div>
                     <div className='flex flex-row'> 
-                        <p className='font-bold font-popins text-xs'>Hobbies: </p> <p className='font-poppins pl-2 text-xs'>Video Games, Fitness, Camping</p>
+                        <p className='font-bold font-popins text-xs'>Hobbies: </p> <p className='font-lato pl-2 text-xs'>Video Games, Fitness, Camping</p>
                     </div>
                     <div className='flex flex-row'> 
-                        <p className='font-bold font-popins text-xs'>Availibility: </p> <p className='font-poppins pl-2 text-xs'>Open for work</p>
+                        <p className='font-bold font-popins text-xs'>Availibility: </p> <p className='font-lato pl-2 text-xs'>Open for work</p>
                     </div>
                     <div className='flex flex-row'> 
-                        <p className='font-bold font-popins text-xs'>Willing to relocate: </p> <p className='font-poppins pl-2 text-xs'>Yes</p>
+                        <p className='font-bold font-popins text-xs'>Willing to relocate: </p> <p className='font-lato pl-2 text-xs'>Yes</p>
                     </div>
                 </div>
             </div>

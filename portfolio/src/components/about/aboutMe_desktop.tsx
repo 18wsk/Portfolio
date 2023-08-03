@@ -21,7 +21,7 @@ const AboutMeDesktop = () => {
                 <div className='w-full h-1/3 flex justify-center items-center'>
                     <MdFitnessCenter className='p-4 fill-my-blue h-full w-full max-w-[189.31px] max-h-[189.31px] drop-shadow-2xl bg-gray-50 rounded-full'/>
                 </div>
-                <p className='xl:text-2xl lg:text-xl md:text-md font-poppins h-2/3 flex items-center'>
+                <p className='xl:text-2xl lg:text-xl md:text-md font-lato h-2/3 flex items-center'>
                     When I'm not working, you can often find me hitting the gym, challenging myself with different workout routines, and striving to stay fit and healthy.
                 </p>
             </div>
@@ -43,7 +43,7 @@ const AboutMeDesktop = () => {
                 <div className='w-full h-1/3 flex justify-center items-center'>
                     <IoLogoGameControllerB className='p-4 fill-my-blue h-full w-full max-w-[189.31px] max-h-[189.31px] drop-shadow-2xl bg-gray-50 rounded-full'/>
                 </div>
-                <p className='xl:text-2xl lg:text-xl md:text-md  font-poppins h-2/3 flex items-center'>
+                <p className='xl:text-2xl lg:text-xl md:text-md  font-lato h-2/3 flex items-center'>
                     I'm also an avid gamer who is obsessed with video games and loves exploring the latest technologies and platforms that enhance the gaming experience. 
                 </p>
             </div>
@@ -65,7 +65,7 @@ const AboutMeDesktop = () => {
                 <div className='w-full h-1/3 flex justify-center items-center'>
                     <GiForestCamp className='p-4 fill-my-blue h-full w-full max-w-[189.31px] max-h-[189.31px] drop-shadow-2xl bg-gray-50 rounded-full'/>
                 </div>
-                <p className='xl:text-2xl lg:text-xl md:text-md  font-poppins h-2/3 flex items-center'>
+                <p className='xl:text-2xl lg:text-xl md:text-md  font-lato h-2/3 flex items-center'>
                     Lastly, I enjoy camping, fishing and hiking. I love taking the opportunity to disconnect from technology to connect with nature.
                 </p>
             </div>

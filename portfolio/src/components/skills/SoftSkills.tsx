@@ -24,7 +24,7 @@ const SoftSkills = () => {
         
         return (
             <div className='lg:py-4 xs:pb-2'>
-                <h1 className="xs:text-sm lg:text-xl font-poppins text-left">{name}</h1>
+                <h1 className="xs:text-sm lg:text-xl font-lato text-left">{name}</h1>
                 <div className="w-full bg-gray-200 rounded-full">
                     <div
                         className="bg-my-blue text-xs font-medium text-blue-100 text-center md:p-2 lg:p-4 leading-none rounded-full"
@@ -51,7 +51,7 @@ const SoftSkills = () => {
     >
         <div className='w-full flex flex-col items-start'>
             <div className='w-full'>
-                <p className='font-poppins font-bold lg:text-[2rem] xs:text-lg text-center lg:pb-4'>Soft Skills</p>
+                <p className='font-lato font-bold lg:text-[2rem] xs:text-lg text-center lg:pb-4'>Soft Skills</p>
                 <BarStat name="Communication" val={90}/>
                 <BarStat name="Adaptability" val={80}/>
                 <BarStat name="Teamwork" val={85}/>
