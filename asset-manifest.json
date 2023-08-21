@@ -1,26 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.06925157.css",
-    "main.js": "/Portfolio/static/js/main.c22a17e2.js",
+    "main.css": "/Portfolio/static/css/main.e131e55b.css",
+    "main.js": "/Portfolio/static/js/main.9d10d056.js",
     "static/media/William_Kennedy_Resume.pdf": "/Portfolio/static/media/William_Kennedy_Resume.b3615d18859acdd8b48e.pdf",
+    "static/media/sadstoics-laptop.jpeg": "/Portfolio/static/media/sadstoics-laptop.79bdffc4350608f60b68.jpeg",
     "static/media/will_pfp.jpg": "/Portfolio/static/media/will_pfp.4e60ed2cfbce23ba6046.jpg",
-    "static/media/github.png": "/Portfolio/static/media/github.c28157079e9ae632e7d0.png",
-    "static/media/aws.png": "/Portfolio/static/media/aws.251d4d52f302287c7522.png",
-    "static/media/javascript.png": "/Portfolio/static/media/javascript.16fa0a639902640a48af.png",
-    "static/media/jira.png": "/Portfolio/static/media/jira.88faaa7802a145b9929c.png",
-    "static/media/agile.png": "/Portfolio/static/media/agile.591431105d9062334459.png",
-    "static/media/react.png": "/Portfolio/static/media/react.f3e576ba08e6be927148.png",
-    "static/media/api.png": "/Portfolio/static/media/api.7e0fcb5aac4017197581.png",
-    "static/media/html.png": "/Portfolio/static/media/html.a84ee78e68d1d1eb34a4.png",
-    "static/media/css.png": "/Portfolio/static/media/css.b34779744067c83350ea.png",
-    "static/media/python.png": "/Portfolio/static/media/python.b17f160a9c0429792c59.png",
-    "static/media/mongodb-logo.png": "/Portfolio/static/media/mongodb-logo.940824112db2f1788f28.png",
+    "static/media/eng.jpg": "/Portfolio/static/media/eng.b21c4a122e855e3e9953.jpg",
+    "static/media/docQshare.png": "/Portfolio/static/media/docQshare.4423d8440386a67ead25.png",
+    "static/media/dev.png": "/Portfolio/static/media/dev.ad363af87c1a1350f1ea.png",
+    "static/media/swiftchat-phone.jpg": "/Portfolio/static/media/swiftchat-phone.256e52056c02a7f7047b.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.06925157.css.map": "/Portfolio/static/css/main.06925157.css.map",
-    "main.c22a17e2.js.map": "/Portfolio/static/js/main.c22a17e2.js.map"
+    "main.e131e55b.css.map": "/Portfolio/static/css/main.e131e55b.css.map",
+    "main.9d10d056.js.map": "/Portfolio/static/js/main.9d10d056.js.map"
   },
   "entrypoints": [
-    "static/css/main.06925157.css",
-    "static/js/main.c22a17e2.js"
+    "static/css/main.e131e55b.css",
+    "static/js/main.9d10d056.js"
   ]
 }
