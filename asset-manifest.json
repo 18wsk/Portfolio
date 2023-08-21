@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e131e55b.css",
-    "main.js": "/Portfolio/static/js/main.9d10d056.js",
+    "main.js": "/Portfolio/static/js/main.62500c6a.js",
     "static/media/William_Kennedy_Resume.pdf": "/Portfolio/static/media/William_Kennedy_Resume.b3615d18859acdd8b48e.pdf",
     "static/media/sadstoics-laptop.jpeg": "/Portfolio/static/media/sadstoics-laptop.79bdffc4350608f60b68.jpeg",
     "static/media/will_pfp.jpg": "/Portfolio/static/media/will_pfp.4e60ed2cfbce23ba6046.jpg",
@@ -11,10 +11,10 @@
     "static/media/swiftchat-phone.jpg": "/Portfolio/static/media/swiftchat-phone.256e52056c02a7f7047b.jpg",
     "index.html": "/Portfolio/index.html",
     "main.e131e55b.css.map": "/Portfolio/static/css/main.e131e55b.css.map",
-    "main.9d10d056.js.map": "/Portfolio/static/js/main.9d10d056.js.map"
+    "main.62500c6a.js.map": "/Portfolio/static/js/main.62500c6a.js.map"
   },
   "entrypoints": [
     "static/css/main.e131e55b.css",
-    "static/js/main.9d10d056.js"
+    "static/js/main.62500c6a.js"
   ]
 }
