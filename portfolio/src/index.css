@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
@@ -16,4 +15,32 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+@layer components {
+    .progress-bar-container {
+        width: 100%;
+        height: 20px;
+        background-color: #f0f0f0;
+        overflow: hidden;
+        rounded: 5px;
+    }
+
+    /* Styles for the progress bar */
+    .progress-bar {
+        width: 0%;
+        height: 100%;
+        background-color: #0f5199;
+        animation: grow 2s ease-in-out;
+    }
+
+    /* Keyframes for the animation */
+    @keyframes grow {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
 }
