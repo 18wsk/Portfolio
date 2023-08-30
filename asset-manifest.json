@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e131e55b.css",
-    "main.js": "/Portfolio/static/js/main.9a0ef3cf.js",
+    "main.css": "/Portfolio/static/css/main.3abbb0cf.css",
+    "main.js": "/Portfolio/static/js/main.9af32291.js",
     "static/media/sadstoics-laptop.jpeg": "/Portfolio/static/media/sadstoics-laptop.79bdffc4350608f60b68.jpeg",
     "static/media/will_pfp.jpg": "/Portfolio/static/media/will_pfp.4e60ed2cfbce23ba6046.jpg",
     "static/media/eng.jpg": "/Portfolio/static/media/eng.b21c4a122e855e3e9953.jpg",
+    "static/media/x.png": "/Portfolio/static/media/x.4d73a49285dbe9cac801.png",
     "static/media/docQshare.png": "/Portfolio/static/media/docQshare.4423d8440386a67ead25.png",
-    "static/media/William_Kennedy_Resume.pdf": "/Portfolio/static/media/William_Kennedy_Resume.5975070a643e0905bd32.pdf",
+    "static/media/William_Kennedy_Resume.pdf": "/Portfolio/static/media/William_Kennedy_Resume.d04a1525dba2133146f3.pdf",
     "static/media/dev.png": "/Portfolio/static/media/dev.ad363af87c1a1350f1ea.png",
     "static/media/swiftchat-phone.jpg": "/Portfolio/static/media/swiftchat-phone.256e52056c02a7f7047b.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.e131e55b.css.map": "/Portfolio/static/css/main.e131e55b.css.map",
-    "main.9a0ef3cf.js.map": "/Portfolio/static/js/main.9a0ef3cf.js.map"
+    "main.3abbb0cf.css.map": "/Portfolio/static/css/main.3abbb0cf.css.map",
+    "main.9af32291.js.map": "/Portfolio/static/js/main.9af32291.js.map"
   },
   "entrypoints": [
-    "static/css/main.e131e55b.css",
-    "static/js/main.9a0ef3cf.js"
+    "static/css/main.3abbb0cf.css",
+    "static/js/main.9af32291.js"
   ]
 }
