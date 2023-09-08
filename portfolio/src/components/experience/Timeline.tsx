@@ -2,11 +2,28 @@ import React from 'react'
 import TimelineModal from './TimelineModal'
 
 const Timeline = () => {
+    const rio = require('src/assets/rio.png');
+    const cg = require('src/assets/cg.jpg');
+    const eng = require('src/assets/eng.jpg');
+
     return (
-        <div className="md:w-1/2 h-3/4 absolute lg:top-40 left-1/4 -translate-x-0">
-            <ol className="relative border-l border-gray-700">
-                <li className="mb-4 ml-6">
-                    <TimelineModal 
+        <div className="w-full h-full flex items-center justify-center" >
+            <ol className="relative border-l border-blue-300 h-full flex flex-col justify-between">
+                <li className="mb-4 ml-6 ">
+                    <TimelineModal
+                        img={eng}
+                        title="Graduated " 
+                        date="April, 2023 " 
+                        location={"Queen's University - Kingston, ON"} 
+                        description={
+                            `I graduated from Queen's University with a Bachelor's of Applied Science in Computer Engineering. `
+                        }
+                    />
+                    
+                </li>
+                <li className="mb-4 ml-6 ">
+                    <TimelineModal
+                        img={cg}
                         title="Full Stack Developer" 
                         date="Jan, 2022 - April, 2023" 
                         location={"CarbonGraph - (Remote) Toronto, ON"} 
@@ -15,9 +32,11 @@ const Timeline = () => {
                             that were pivotal for the company to become Canada's top 50 most investible clean-tech start-ups!`
                         }
                     />
+                    
                 </li>
                 <li className="mb-4 ml-6">
-                    <TimelineModal 
+                    <TimelineModal
+                        img={rio}
                         title="Automation Engineering Intern" 
                         date="May, 2020 - Aug, 2020" 
                         location={"Rio Tinto - Kitimat BC"} 
@@ -29,7 +48,8 @@ const Timeline = () => {
                     />
                 </li>                 
                 <li className="mb-4 ml-6 ">
-                    <TimelineModal 
+                    <TimelineModal
+                        img={eng}
                         title="Enrolled in school for Engineering" 
                         date="Sept, 2018" 
                         location={"Queen's University"} 
@@ -39,9 +59,9 @@ const Timeline = () => {
                     />
                 </li>
                 <li className="mb-4 ml-6">
-                    <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-4 dark:bg-my-blue">
+                    <span className="absolute flex items-center justify-center w-6 h-6 bg-my-blue rounded-full bottom-0 -left-3 ring-4 dark:bg-my-blue">
                     </span>
-                    <p className='text-white'>W</p>
+                    <p className='text-white'></p>
                 </li>
             </ol>
         </div>
