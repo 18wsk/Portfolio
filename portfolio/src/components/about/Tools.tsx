@@ -35,15 +35,15 @@ const Tools = () => {
     return (
         <motion.div
             whileHover={{ scale: 1.05 }}
-            className='w-full xs:h-[140px] md:h-[240px] bg-[#f6f6f6] rounded-lg shadow-md shadow-my-blue'
+            className='w-full xs:h-[140px] md:h-[200px] bg-[#f6f6f6] rounded-lg shadow-md shadow-my-blue'
             >
             <div className='w-full h-fit bg-blue-300 px-4 py-2 rounded-t-lg'>
                 <h1 className='text-white xs:text-sm lg:text-xl font-extrabold whitespace-new-line w-full'>
                     Tools
                 </h1>
             </div>
-            <div className='w-full h-fit flex flex-col items-center justify-center p-2'>
-                <div className='w-fit h-fit grid grid-cols-8 grid-rows-2 px-2 py-2 xs:gap-x-2 xs:gap-y-2 lg:gap-x-4 lg:gap-y-4'>
+            <div className='w-full h-3/4 flex flex-col items-center justify-center p-2'>
+                <div className='w-fit h-fit grid grid-cols-8 grid-rows-2 px-2 py-2 xs:gap-x-1 xs:gap-y-1 lg:gap-x-1 lg:gap-y-1'>
                     <ToolBadge name={"React"} icon={<BiLogoReact className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"NodeJS"} icon={<BiLogoNodejs className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"HTML"} icon={<AiOutlineHtml5 className='w-[32px] h-[32px] fill-white'/>}/>
