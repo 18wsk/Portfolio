@@ -17,7 +17,6 @@ const ProjectSection = () => {
     })
 
     const Modal = () => {
-
         return (
             <Dialog
                 open={openModal}
@@ -76,81 +75,80 @@ const ProjectSection = () => {
     
 
     return (
-        <div className='w-full h-full relative z-0 xs:pt-[32px] sm:pt-[80px] md:pt-[80px] lg:pt-[120px] ' id="projects" >
-            <motion.div
-                whileInView={{ y: 0, opacity: 1 }}
-                initial={{ y: 100, opacity: 0 }}
-                transition={{
-                    duration: 0.6,
-                    type: "spring",
-                    damping: 40,
-                }}
-                viewport={{ once: true }}
-                className='w-full h-full'
-            >
-                <div className='w-full h-full px-[2rem] flex flex-col items-center justify-between'>
-                    <Modal/>
-                    <div className='w-full h-fit'>
-                        <h1 className='h-fit w-full text-my-blue font-lato font-bold lg:text-[4rem] xs:text-xl text-center xs:block sm:hidden lg:block'
-                        >
-                            PROJECTS 
-                        </h1>
-                        <div className='w-full h-fit items-center justify-center xs:pb-4 sm:pb-8 xs:flex sm:hidden lg:flex pt-4'>
-                            <div className='w-[32px] h-[4px] bg-black rounded-lg'/>
-                        </div>
-                    </div>
-                    <div className={'w-full h-full flex flex-col lg:flex-row lg:flex-cols-2 items-center justify-between gap-x-4 sm:p-4 '}>
-                        <div className='w-full h-full flex flex-col lg:flex-row gap-y-2 lg:gap-y-0 items-center justify-betwen'>
-                            <ProjectBadge 
-                                img={sadstoics}
-                                title={"sadstoics"} 
-                                githubLink='https://github.com/18wsk/sadstoics'
-                                message={"Unveiling a merchandise venture with a React-based website powered by JavaScript, TypeScript, Redux, and REST APIs."+ 
-                                "Elevating user experiences through AWS integration and modern design aesthetics with Tailwind CSS."}
-                                tag={"My newly established enterprise"}
-                                tools={[
-                                    'React', 
-                                    'Redux', 
-                                    'AWS', 
-                                    'NodeJS', 
-                                    'ExpressJS', 
-                                    'MongoDB', 
-                                    'REST'
-                                ]}
-                                openModal={openModal}
-                                setOpenModal={setOpenModal}
-                                setModalProps={setModalProps}
-                            />
-                            <ProjectBadge 
-                                img={swiftchat} 
-                                title={"swiftchat"} 
-                                phone={true} websitelink="http://swiftchat.ca" 
-                                githubLink='https://github.com/18wsk/DiscordClone'
-                                message={"An instant messaging platform, employing websockets and REST APIs for real-time communication. Seamlessly adapting to "+
-                                        "various devices through responsive design, it ensures a consistent experience across screens. The application is"
-                                        +"efficiently deployed on the web, enabling users to connect and converse effortlessly."}
-                                tag={"Personal Project"}
-                                tools={['Socket.io', 'Zustand', 'TS', 'Responsive', 'TailwindCSS', 'AWS EC2', 'Deployment']}
-                                openModal={openModal}
-                                setOpenModal={setOpenModal}
-                                setModalProps={setModalProps}
-                            />
-                            <ProjectBadge 
-                                img={docQshare} 
-                                title={"docQshare"} 
-                                githubLink='https://github.com/ArshKochhar/DocQshare'
-                                message={"Revolutionize document sharing with our blockchain-based platform. Guaranteed file integrity, verified transactions, and secure access through smart contracts redefine how documents are shared. Embrace the future of document sharing today."}
-                                tag={"Queen's University Capstone Project"}
-                                tools={['React', 'Redux', 'TypeScript', 'JavaScript', 'TailwindCSS', 'AWS RDS']}
-                                openModal={openModal}
-                                setOpenModal={setOpenModal}
-                                setModalProps={setModalProps}
-                            />
-                        </div>
+        <motion.div
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: 100, opacity: 0 }}
+            transition={{
+                duration: 0.6,
+                type: "spring",
+                damping: 40,
+            }}
+            viewport={{ once: true }}
+            className='w-screen h-[800px] flex flex-col items-center justify-center sm:pt-[80px] px-4'
+            id="projects"
+        >
+            <div className='w-full h-full flex flex-col items-center justify-center'>
+                <Modal/>
+                <div className="w-full h-fit py-2"> 
+                    <h1 className='text-my-blue font-lato font-bold lg:text-[4rem] xs:text-xl text-center xs:block sm:hidden lg:block relative pt-4'
+                    >
+                        PROJECTS 
+                    </h1>
+                    <div className='w-full h-fit items-center justify-center xs:pb-4 sm:pb-8 xs:flex sm:hidden lg:flex pt-4'>
+                        <div className='w-[32px] h-[4px] bg-black rounded-lg'/>
                     </div>
                 </div>
-            </motion.div>
-        </div>
+                <div className={'w-full h-full flex flex-col lg:flex-row lg:flex-cols-2 xs:items-center lg:items-start xs:justify-between gap-x-4 sm:p-4 '}>
+                    <div className='w-full h-3/4 flex flex-col lg:flex-row'>
+                        <ProjectBadge 
+                            img={sadstoics}
+                            title={"sadstoics"} 
+                            githubLink='https://github.com/18wsk/sadstoics'
+                            message={"Unveiling a merchandise venture with a React-based website powered by JavaScript, TypeScript, Redux, and REST APIs."+ 
+                            "Elevating user experiences through AWS integration and modern design aesthetics with Tailwind CSS."}
+                            tag={"My newly established enterprise"}
+                            tools={[
+                                'React', 
+                                'Redux', 
+                                'AWS', 
+                                'NodeJS', 
+                                'ExpressJS', 
+                                'MongoDB', 
+                                'REST'
+                            ]}
+                            openModal={openModal}
+                            setOpenModal={setOpenModal}
+                            setModalProps={setModalProps}
+                        />
+                        <ProjectBadge 
+                            img={swiftchat} 
+                            title={"swiftchat"} 
+                            phone={true} websitelink="http://swiftchat.ca" 
+                            githubLink='https://github.com/18wsk/DiscordClone'
+                            message={"An instant messaging platform, employing websockets and REST APIs for real-time communication. Seamlessly adapting to "+
+                                    "various devices through responsive design, it ensures a consistent experience across screens. The application is"
+                                    +"efficiently deployed on the web, enabling users to connect and converse effortlessly."}
+                            tag={"Personal Project"}
+                            tools={['Socket.io', 'Zustand', 'TS', 'Responsive', 'TailwindCSS', 'AWS EC2', 'Deployment']}
+                            openModal={openModal}
+                            setOpenModal={setOpenModal}
+                            setModalProps={setModalProps}
+                        />
+                        <ProjectBadge 
+                            img={docQshare} 
+                            title={"docQshare"} 
+                            githubLink='https://github.com/ArshKochhar/DocQshare'
+                            message={"Revolutionize document sharing with our blockchain-based platform. Guaranteed file integrity, verified transactions, and secure access through smart contracts redefine how documents are shared. Embrace the future of document sharing today."}
+                            tag={"Queen's University Capstone Project"}
+                            tools={['React', 'Redux', 'TypeScript', 'JavaScript', 'TailwindCSS', 'AWS RDS']}
+                            openModal={openModal}
+                            setOpenModal={setOpenModal}
+                            setModalProps={setModalProps}
+                        />
+                    </div>
+                </div>
+            </div>
+        </motion.div>
     )
 }
 

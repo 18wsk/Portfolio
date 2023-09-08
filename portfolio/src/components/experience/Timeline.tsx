@@ -8,7 +8,7 @@ const Timeline = () => {
 
     return (
         <div className="w-full h-full flex items-center justify-center" >
-            <ol className="relative border-l border-my-blue h-full flex flex-col justify-between">
+            <ol className="relative border-l border-blue-300 h-full flex flex-col justify-between">
                 <li className="mb-4 ml-6 ">
                     <TimelineModal
                         img={eng}

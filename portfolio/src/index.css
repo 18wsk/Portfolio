@@ -17,7 +17,52 @@ html {
     scroll-behavior: smooth;
 }
 
+@keyframes typing {
+  0% {
+    width: 0%;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+    visibility: visible;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: white;
+  }
+}
+
+@keyframes typing-pause {
+  0%, 100% {
+    width: 100%; /* Keep the width at 100% during the pause */
+    visibility: visible; /* Keep the visibility visible during the pause */
+  }
+}
+
+
 @layer components {
+    .font-lato.typing-text {
+      font-family: 'Lato', sans-serif; /* Replace with your font definition */
+    }
+
+    .typing-text {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 4px solid #000;
+        padding-right: 14px;
+        font-size:  24px;
+        color: #000; 
+        font-weight: bold;
+        animation: typing 2s steps(20) 1, blink 0.5s step-end infinite alternate;
+        animation-fill-mode: forwards;
+    }
+
     .progress-bar-container {
         width: 100%;
         height: 20px;
@@ -33,14 +78,6 @@ html {
         background-color: #0f5199;
         animation: grow 2s ease-in-out;
     }
-
-    /* Keyframes for the animation */
-    @keyframes grow {
-        0% {
-            width: 0%;
-        }
-        100% {
-            width: 100%;
-        }
-    }
 }
+
+

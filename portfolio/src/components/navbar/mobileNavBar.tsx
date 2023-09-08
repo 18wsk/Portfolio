@@ -56,7 +56,7 @@ const MobileNavBar : FC<{ setActive: (id: string) => void; active: string;}> = (
         <div className="w-screen fixed h-20 z-50 sitcky-top">
             <Menu >
                 <Menu.Button className="absolute top-1/2 -translate-y-1/2 right-[1rem] z-100">
-                    <AiOutlineMenu className='fill-my-blue h-[20px] w-[20px]'/>
+                    <AiOutlineMenu className='fill-blue-300 h-[20px] w-[20px]'/>
                 </Menu.Button>
                 <Transition
                     enter="transition duration-100 ease-out"

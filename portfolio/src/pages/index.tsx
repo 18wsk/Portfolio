@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import NavBar from 'src/components/navbar/navBar';
-import PageSection from 'src/components/pageSection';
 import { Triangle } from 'react-loader-spinner';
 import MobileNavBar from 'src/components/navbar/mobileNavBar';
 import AboutMeSection from 'src/pages/about';
@@ -13,6 +12,8 @@ const LandingPage = () => {
     const [active, setActive] = useState<string>("home");
 
     const [loaded, setLoaded] = useState<boolean>(false);
+
+    const [hoverState, setHoverState] = useState<number>(0);
 
     useEffect(() => {
         const loadingTimeout = setTimeout(() => {
@@ -47,21 +48,11 @@ const LandingPage = () => {
             <div className='sm:hidden xs:block'>
                 <MobileNavBar setActive={setActive} active={active}/>
             </div>
-            <PageSection>
-                <LandingSection/>
-            </PageSection>
-            <PageSection>
-                <AboutMeSection/>
-            </PageSection>
-            <PageSection>
-                <ProjectSection/>
-            </PageSection>
-            <PageSection>
-                <ExperienceSection/>
-            </PageSection>
-            <PageSection>
-                <ContactSection/>
-            </PageSection>
+            <LandingSection/>
+            <AboutMeSection/>
+            <ProjectSection/>
+            <ExperienceSection/>
+            <ContactSection/>
         </div>
     )
 }

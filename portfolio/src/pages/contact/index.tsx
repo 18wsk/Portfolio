@@ -27,7 +27,7 @@ const ContactSection = () => {
                                     <div className='w-[32px] h-[4px] bg-black rounded-lg'>
                                 </div>
                             </div>
-                            <div className='w-full xs:h-3/4 sm:h-3/4 flex items-center justify-center'>
+                            <div className='w-full h-3/4 flex items-center justify-center'>
                                 <Contact/>
                             </div>
                         </div>

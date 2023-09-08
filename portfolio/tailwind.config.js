@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
@@ -44,29 +45,8 @@ module.exports = {
         'xl': '1280px',
         '2xl': '1536px',
         '3xl': '1920px',
-      },
-      keyframes: {
-        typing: {
-          "0%": {
-            width: "0%",
-            visibility: "hidden"
-          },
-          "100%": {
-            width: "100%"
-          }  
-        },
-        blink: {
-          "50%": {
-            borderColor: "transparent"
-          },
-          "100%": {
-            borderColor: "white"
-          }  
-        }
-      },
-      animation: {
-        typing: "typing 2s steps(20) 2000ms infinite alternate, blink .7s infinite"
       }
     },
   },
 }
+

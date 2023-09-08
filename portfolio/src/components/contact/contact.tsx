@@ -48,8 +48,15 @@ const Contact = () => {
                     <input 
                         name="contact" 
                         type="text" 
-                        placeholder="Leave preferred contact please" 
-                        className="xs:w-full sm:w-10/12 h-12 rounded-xl bg-gray-100 px-2" 
+                        placeholder="Please provide the best way to contact you and any preferred days and times." 
+                        className="xs:hidden lg:block w-10/12 h-12 rounded-xl bg-gray-100 px-2 text-sm" 
+                        required onChange={(e) => setFormData({...formData, contact: e.target.value})}
+                    />
+                    <input 
+                        name="contact" 
+                        type="text" 
+                        placeholder="Please leave contact information here." 
+                        className="xs:w-full sm:w-10/12 xs:block lg:hidden h-12 rounded-xl bg-gray-100 px-2" 
                         required onChange={(e) => setFormData({...formData, contact: e.target.value})}
                     />
                 </div>
