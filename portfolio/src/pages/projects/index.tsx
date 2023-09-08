@@ -3,7 +3,12 @@ import { ProjectBadge } from '../../components/projects/ProjectBadge'
 import { Dialog } from '@headlessui/react';
 import {  useState } from 'react';
 
-const ProjectSection = () => {
+const ProjectSection = ({ 
+    setHoverState
+}: 
+{
+    setHoverState(hov: string): void
+}) => {
     const sadstoics = require('../../assets/sadstoics-laptop.jpeg');
     const swiftchat = require('../../assets/swiftchat-phone.jpg');
     const docQshare = require('../../assets/docQshare.png');
@@ -76,30 +81,31 @@ const ProjectSection = () => {
 
     return (
         <motion.div
-            whileInView={{ y: 0, opacity: 1 }}
-            initial={{ y: 100, opacity: 0 }}
+            whileInView={{opacity: 1 }}
+            initial={{ opacity: 0 }}
             transition={{
                 duration: 0.6,
                 type: "spring",
                 damping: 40,
             }}
             viewport={{ once: true }}
-            className='w-screen h-[800px] flex flex-col items-center justify-center sm:pt-[80px] px-4'
+            className='w-screen h-min-[800px] flex flex-col items-center justify-center sm:pt-[80px] px-4 bg-white pb-2'
+            onMouseEnter={() => setHoverState("projects")}
             id="projects"
         >
             <div className='w-full h-full flex flex-col items-center justify-center'>
                 <Modal/>
                 <div className="w-full h-fit py-2"> 
-                    <h1 className='text-my-blue font-lato font-bold lg:text-[4rem] xs:text-xl text-center xs:block sm:hidden lg:block relative pt-4'
+                    <h1 className='text-my-blue font-lato font-bold lg:text-[4rem] xs:text-xl text-center block relative pt-4'
                     >
                         PROJECTS 
                     </h1>
-                    <div className='w-full h-fit items-center justify-center xs:pb-4 sm:pb-8 xs:flex sm:hidden lg:flex pt-4'>
+                    <div className='w-full h-fit items-center justify-center xs:pb-4 sm:pb-8 flex pt-4'>
                         <div className='w-[32px] h-[4px] bg-black rounded-lg'/>
                     </div>
                 </div>
-                <div className={'w-full h-full flex flex-col lg:flex-row lg:flex-cols-2 xs:items-center lg:items-start xs:justify-between gap-x-4 sm:p-4 '}>
-                    <div className='w-full h-3/4 flex flex-col lg:flex-row'>
+                <div className={'w-full h-full flex flex-col lg:flex-row lg:flex-cols-2 xs:items-center lg:items-center xs:justify-center gap-x-4 sm:p-4 '}>
+                    <div className='w-full xs:h-full xs:pb-[80px] lg:h-3/4 flex flex-col lg:flex-row'>
                         <ProjectBadge 
                             img={sadstoics}
                             title={"sadstoics"} 

@@ -25,7 +25,7 @@ const TimeLineButton = ({
                 <button
                     type="button"
                     onClick={openModal}
-                    className="sm:hidden rounded-md bg-my-blue px-4 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                    className="lg:hidden rounded-md bg-my-blue px-4 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
                 >
                     Details
                 </button>

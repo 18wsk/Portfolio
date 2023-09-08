@@ -1,23 +1,16 @@
 import clsx from "clsx";
-import { FC, useState } from "react";
 
-const NavBar: FC<{ setActive: (id: string) => void; active: string;}> = (props) => {
+const NavBar = ( {setActive, active}:{
+    setActive: (val: string) => void,
+    active: string
+}) => {
+
     const Logo =  require("../../assets/logo_nobg.png");
-    const [hover, setHover] = useState<number>(0);
-
-    const options = ["home", "about", "projects", "experience", "contact"];
-
-    const setActive = (id: string) => {
-        props.setActive(id);
-        setHover(options.indexOf(id));
-        console.log(id, options.indexOf(id))
-    };
 
     return (
         <div 
-            className='bg-white w-screen fixed h-20 bg-page-white flex flex-row bg-transparent backdrop-blur-xl z-50 lg:px-[2rem] xs:px-2 min-w-[300px] shadow-sm 
+            className='w-screen fixed h-20 bg-page-white flex flex-row bg-transparent backdrop-blur-md z-50 lg:px-[2rem] xs:px-2 min-w-[300px] shadow-sm 
                         shadow-gray-200'
-            
                         >
         <div className='w-fit h-full lg:flex lg:items-center md:hidden sm:hidden xs:hidden'>
             <img src={Logo} alt="logo"/>
@@ -27,7 +20,8 @@ const NavBar: FC<{ setActive: (id: string) => void; active: string;}> = (props) 
                 <a className={clsx(
                     `font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
                     rounded-md hover:font-extrabold `,
-                    hover === 0 && "bg-white text-my-blue shadow-sm shadow-my-blue"
+                    active === "home" && "bg-white text-my-blue shadow-sm shadow-my-blue",
+                    (active === "about" || active === "experience") && "text-blue-300"
                 )}
                     href="#home" 
                     onClick={()=> {setActive("home")}}>
@@ -35,26 +29,40 @@ const NavBar: FC<{ setActive: (id: string) => void; active: string;}> = (props) 
                 </a>
                 <a className={clsx(`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
                                 rounded-md hover:font-extrabold `,
-                                hover === 1 && "bg-white text-my-blue shadow-sm shadow-my-blue")
+                                active === "about" && "bg-white text-my-blue shadow-sm shadow-blue-300",
+                                active === "experience" && "text-blue-300"
+                                )
                     } 
                     href="#about" 
                     onClick={()=> setActive("about")}>
                     ABOUT
                 </a>
-                <a className={`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
-                                rounded-md hover:font-extrabold `} 
+                <a className={clsx(`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
+                                rounded-md hover:font-extrabold `,
+                                active === "projects" && "bg-white text-my-blue shadow-sm shadow-my-blue",
+                                (active === "about" || active === "experience") && "text-blue-300"
+                            )
+                    } 
                     href="#projects" 
                     onClick={()=> setActive("projects")}>
                     PROJECTS
                 </a>
-                <a className={`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
-                                rounded-md hover:font-extrabold blue`} 
+                <a className={clsx(`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
+                                rounded-md hover:font-extrabold `,
+                                active === "experience" && "bg-white text-my-blue shadow-sm shadow-blue-300",
+                                active === "about" && "text-blue-300"
+                            )
+                    } 
                     href="#experience" 
                     onClick={()=> setActive("experience")}>
                     EXPERIENCE
                 </a>
-                <a className={`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
-                                rounded-md hover:font-extrabold `}  
+                <a className={clsx(`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
+                                rounded-md hover:font-extrabold `,
+                                active === "contact" && "bg-white text-my-blue shadow-sm shadow-my-blue",
+                                (active === "about" || active === "experience") && "text-blue-300"
+                            )
+                    } 
                     href="#contact" 
                     onClick={()=> setActive("contact")}>
                     CONTACT

@@ -9,11 +9,13 @@ import ExperienceSection from './experience';
 import ContactSection from './contact';
 
 const LandingPage = () => {
-    const [active, setActive] = useState<string>("home");
+    const [active, setActive] = useState<string>("");
 
     const [loaded, setLoaded] = useState<boolean>(false);
 
-    const [hoverState, setHoverState] = useState<number>(0);
+    useEffect(() => {
+        console.log(active);
+    },  [active]);
 
     useEffect(() => {
         const loadingTimeout = setTimeout(() => {
@@ -43,16 +45,16 @@ const LandingPage = () => {
     return (
         <div className='bg-white fixed w-screen h-screen overflow-scroll scrollbar-hide scroll-smooth md:scrollbar-default snap-mandatory snap-y'>
             <div className='xs:hidden sm:block'>
-                <NavBar setActive={setActive} active={active}/>
+                <NavBar setActive={setActive} active={active}  />
             </div>
             <div className='sm:hidden xs:block'>
                 <MobileNavBar setActive={setActive} active={active}/>
             </div>
-            <LandingSection/>
-            <AboutMeSection/>
-            <ProjectSection/>
-            <ExperienceSection/>
-            <ContactSection/>
+            <LandingSection setHoverState={setActive}/>
+            <AboutMeSection setHoverState={setActive}/>
+            <ProjectSection setHoverState={setActive}/>
+            <ExperienceSection setHoverState={setActive}/>
+            <ContactSection setHoverState={setActive} />
         </div>
     )
 }

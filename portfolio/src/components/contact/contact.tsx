@@ -14,16 +14,16 @@ const Contact = () => {
     const sendEmail = async () => {
         await emailjs.send('service_nr375yv', 'template_dldwu8r', formData, "uAZqooKamZXIcA_qD")
         .then(async function() {
-            await toast("success");
+            toast("success");
         }).catch(async function() {
-            await toast("Could not send email, please try again!")
+            toast("Could not send email, please try again!")
         });
     }
 
 
     return (
         <div className="w-full h-full flex items-center justify-center md:py-4 xs:px-4 rounded-lg">
-            <div className="sm:w-2/3 xs:w-full rounded-xl shadow-2xl md:p-10 xs:px-4  border-[1px] border-my-blue/20">
+            <div className="sm:w-2/3 xs:w-full rounded-xl shadow-2xl md:p-10 xs:px-4 border-[1px] border-my-blue/20">
                 <h1 className="text-xl font-bold text-left p-1 text-my-blue">Name:</h1>
                 <div className='w-full pb-2 flex justify-center'>
                     <input 

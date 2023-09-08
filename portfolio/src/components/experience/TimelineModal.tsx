@@ -36,7 +36,7 @@ const TimelineModal = ({
                 <h3 className="text-md font-semibold text-gray-900">{title}</h3>
                 <p className="block mb-2 text-xs leading-none text-gray-500 font-bold">{location}</p>
                 <time className="block mb-2 text-xs font-normal leading-none text-gray-500">{date}</time>
-                <p className="xs:hidden md:flex text-sm font-normal text-gray-400 whitespace-pre-line py-2">
+                <p className="xs:hidden lg:flex text-sm font-normal text-gray-400 whitespace-pre-line py-2">
                     {description}
                 </p>
                 <TimeLineButton 

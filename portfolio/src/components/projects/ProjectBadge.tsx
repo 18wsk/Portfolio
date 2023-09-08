@@ -76,7 +76,7 @@ export const ProjectBadge = ({
                                 src={img} 
                                 alt={title}
                                 className={clsx('w-full h-full object-contain',
-                                    phone && "xs:h-full xs:w-full lg:w-[120px] lg:h-[240px] xl:h-[300px] "
+                                    phone && "xs:h-full xs:w-full lg:w-[120px] lg:h-[200px] xl:h-[300px] "
                                 )}
                                 id={title}
                                 initial={{ opacity: 0, size: 0 }}
