@@ -47,7 +47,7 @@ const LandingSection = (
                             <h1 className='font-lato lg:text-2xl font-bold text-black pb-12 '>Hi, I'm</h1>
                         </div>
                         <h1 className='font-lato xs:pt-4 sm:pt-12 lg:pt-0 sm:text-6xl xs:text-3xl font-extrabold text-black underline decoration-my-blue'> William Kennedy</h1>
-                        <div className='h-full w-full flex flex-col items-center justify-around'>
+                        <div className='h-full w-full flex flex-col items-center justify-around '>
                             <div className='w-max'>
                                 <h1 className="typing-text">
                                     {text}
@@ -57,7 +57,7 @@ const LandingSection = (
                                 <a 
                                     className='w-full shadow-xl shadow-my-blue/20 font-lato bg-my-blue text-white 
                                                 rounded-lg py-2 px-4 flex items-center justify-center gap-x-4 font-bold 
-                                                hover:bg-blue-200 hover:border-4 hover:border-my-blue hover:scale-110' 
+                                                hover:bg-blue-200 border-4 hover:border-my-blue' 
                                     target="_blank" 
                                     href={resume} 
                                     download={resume.name} 
