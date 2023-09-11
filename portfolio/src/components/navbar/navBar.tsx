@@ -20,8 +20,6 @@ const NavBar = ( {setActive, active}:{
                 <a className={clsx(
                     `text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                     rounded-md hover:font-extrabold `,
-                    // active === "home" && "bg-white text-my-blue shadow-sm shadow-my-blue",
-                    // (active === "about" || active === "experience") && "text-blue-300"
                 )}
                     href="#home" 
                     onClick={()=> {setActive("home")}}>
@@ -29,8 +27,6 @@ const NavBar = ( {setActive, active}:{
                 </a>
                 <a className={clsx(`text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                                 rounded-md hover:font-extrabold `,
-                                // active === "about" && "bg-white text-my-blue shadow-sm shadow-blue-300",
-                                // (active === "about" || active === "experience") && "text-blue-300"
                                 )
                     } 
                     href="#about" 
@@ -39,8 +35,6 @@ const NavBar = ( {setActive, active}:{
                 </a>
                 <a className={clsx(`text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                                 rounded-md hover:font-extrabold `,
-                                // // active === "projects" && "bg-white text-my-blue shadow-sm shadow-my-blue",
-                                // (active === "about" || active === "experience") && "text-blue-300"
                             )
                     } 
                     href="#projects" 
@@ -49,8 +43,6 @@ const NavBar = ( {setActive, active}:{
                 </a>
                 <a className={clsx(`text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                                 rounded-md hover:font-extrabold `,
-                                // active === "experience" && "bg-white text-my-blue shadow-sm shadow-blue-300",
-                                // active === "about" && "text-blue-300"
                             )
                     } 
                     href="#experience" 
@@ -59,8 +51,6 @@ const NavBar = ( {setActive, active}:{
                 </a>
                 <a className={clsx(`text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                                 rounded-md hover:font-extrabold `,
-                                // active === "contact" && "bg-white text-my-blue shadow-sm shadow-my-blue",
-                                // (active === "about" || active === "experience") && "text-blue-300"
                             )
                     } 
                     href="#contact" 

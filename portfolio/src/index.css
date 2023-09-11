@@ -59,8 +59,9 @@ html {
         font-size:  24px;
         color: #000; 
         font-weight: bold;
-        animation: typing 2s steps(20) 1, blink 0.5s step-end infinite alternate;
+        animation: typing 2s steps(20) 1, blink 0.5s step-end infinite alternate; /* Add typing-pause animation with infinite iteration */
         animation-fill-mode: forwards;
+        animation-delay: 0.5s;
     }
 
     .progress-bar-container {
@@ -68,7 +69,7 @@ html {
         height: 20px;
         background-color: #f0f0f0;
         overflow: hidden;
-        rounded: 5px;
+        border-radius: 5px;
     }
 
     /* Styles for the progress bar */
