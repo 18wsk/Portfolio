@@ -23,8 +23,8 @@ const Contact = () => {
 
     return (
         <div className="w-full h-full flex items-center justify-center md:py-4 xs:px-4 rounded-lg">
-            <div className="sm:w-2/3 xs:w-full rounded-xl shadow-2xl md:p-10 xs:px-4 border-[1px] border-my-blue/20">
-                <h1 className="text-xl font-bold text-left p-1 text-my-blue">Name:</h1>
+            <div className="sm:w-2/3 xs:w-full h-3/4 rounded-xl shadow-2xl md:p-10 xs:px-4 border-[1px] border-my-blue/20 flex flex-col items-center justify-center">
+                <h1 className="w-full flex items-start text-xl font-bold text-left p-1 text-my-blue">Name:</h1>
                 <div className='w-full pb-2 flex justify-center'>
                     <input 
                         name="name" 
@@ -34,7 +34,7 @@ const Contact = () => {
                         required onChange={(e) => setFormData({...formData, name: e.target.value})}
                     />
                 </div>
-                <h1 className="text-xl font-bold text-left p-1 text-my-blue">Message:</h1>
+                <h1 className="w-full flex items-start text-xl font-bold text-left p-1 text-my-blue">Message:</h1>
                 <div className='w-full pb-2 flex justify-center'>
                     <textarea 
                         name="message" 
@@ -43,7 +43,7 @@ const Contact = () => {
                         required onChange={(e) => setFormData({...formData, message: e.target.value})}>
                     </textarea>
                 </div>
-                <h1 className="text-xl font-bold text-left p-1 text-my-blue">How to Reach You:</h1>
+                <h1 className="w-full flex items-start text-xl font-bold text-left p-1 text-my-blue">How to Reach You:</h1>
                 <div className='w-full pb-2 flex justify-center'> 
                     <input 
                         name="contact" 

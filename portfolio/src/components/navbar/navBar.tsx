@@ -18,49 +18,49 @@ const NavBar = ( {setActive, active}:{
         <div className='w-full h-full flex lg:justify-end xs:justify-center'>
             <div className='lg:w-fit xs:w-full h-full grid grid-cols-5 gap-4 place-items-center'>
                 <a className={clsx(
-                    `font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
+                    `text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                     rounded-md hover:font-extrabold `,
-                    active === "home" && "bg-white text-my-blue shadow-sm shadow-my-blue",
-                    (active === "about" || active === "experience") && "text-blue-300"
+                    // active === "home" && "bg-white text-my-blue shadow-sm shadow-my-blue",
+                    // (active === "about" || active === "experience") && "text-blue-300"
                 )}
                     href="#home" 
                     onClick={()=> {setActive("home")}}>
                     HOME
                 </a>
-                <a className={clsx(`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
+                <a className={clsx(`text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                                 rounded-md hover:font-extrabold `,
-                                active === "about" && "bg-white text-my-blue shadow-sm shadow-blue-300",
-                                active === "experience" && "text-blue-300"
+                                // active === "about" && "bg-white text-my-blue shadow-sm shadow-blue-300",
+                                // (active === "about" || active === "experience") && "text-blue-300"
                                 )
                     } 
                     href="#about" 
                     onClick={()=> setActive("about")}>
                     ABOUT
                 </a>
-                <a className={clsx(`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
+                <a className={clsx(`text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                                 rounded-md hover:font-extrabold `,
-                                active === "projects" && "bg-white text-my-blue shadow-sm shadow-my-blue",
-                                (active === "about" || active === "experience") && "text-blue-300"
+                                // // active === "projects" && "bg-white text-my-blue shadow-sm shadow-my-blue",
+                                // (active === "about" || active === "experience") && "text-blue-300"
                             )
                     } 
                     href="#projects" 
                     onClick={()=> setActive("projects")}>
                     PROJECTS
                 </a>
-                <a className={clsx(`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
+                <a className={clsx(`text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                                 rounded-md hover:font-extrabold `,
-                                active === "experience" && "bg-white text-my-blue shadow-sm shadow-blue-300",
-                                active === "about" && "text-blue-300"
+                                // active === "experience" && "bg-white text-my-blue shadow-sm shadow-blue-300",
+                                // active === "about" && "text-blue-300"
                             )
                     } 
                     href="#experience" 
                     onClick={()=> setActive("experience")}>
                     EXPERIENCE
                 </a>
-                <a className={clsx(`font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-my-blue p-2 
+                <a className={clsx(`text-blue-300 font-lato lg:text-md md:text-sm sm:text-xs xs:text-xs w-fit text-center font-bold hover:shadow-sm hover:shadow-blue-300 p-2 
                                 rounded-md hover:font-extrabold `,
-                                active === "contact" && "bg-white text-my-blue shadow-sm shadow-my-blue",
-                                (active === "about" || active === "experience") && "text-blue-300"
+                                // active === "contact" && "bg-white text-my-blue shadow-sm shadow-my-blue",
+                                // (active === "about" || active === "experience") && "text-blue-300"
                             )
                     } 
                     href="#contact" 
