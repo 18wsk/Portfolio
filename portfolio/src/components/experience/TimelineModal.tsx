@@ -25,7 +25,7 @@ const TimelineModal = ({
                 className={`${bounce && "animate-bounce duration-75"} shadow-xl absolute flex items-center justify-center w-12 h-12 rounded-full -left-6 ring-2 ring-my-blue dark:bg-my-blue`}
             />
             <motion.div 
-                className="ml-4 rounded-lg border-2 border-my-blue p-2 shadow-xl bg-white"
+                className="ml-4 rounded-lg border-2 border-my-blue p-2 shadow-md shadow-black bg-white"
                 initial={{ opacity: 0, size: 0 }}
                 animate={{ opacity: 1, size: 1 }}
                 transition={{ duration: 0.05 }}

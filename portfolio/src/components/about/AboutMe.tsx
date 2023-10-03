@@ -8,7 +8,7 @@ const AboutMe = () => {
         <motion.div
             whileHover={{ scale: 1.05 }}
             className='xs:w-full lg:w-[320px] h-fit flex xs:flex-cols-2 lg:flex-col lg:items-start lg:justify-start xs:items-center xs:justify-center 
-                        rounded-lg shadow-md shadow-my-blue/70'
+                        rounded-lg shadow-lg shadow-black'
         >
             <div className='w-full h-full flex-col items-center justify-center xs:hidden sm:flex bg-[#f6f6f6] xs:rounded-lg sm:rounded-none sm:rounded-l-lg lg:rounded-none
                     lg:rounded-t-lg'>
@@ -26,9 +26,9 @@ const AboutMe = () => {
                     Who Am I?
                 </h1>
                 <p className='text-white text-xs font-bold whitespace-new-line xs:w-fit lg:w-[300px] p-2'> 
-                    I go by William Kennedy, a proficient full-stack developer with a fervor for crafting innovative solutions. Skilled in cloud-based web and 
-                    backend development, backed by a strong track record and holding a B.A.Sc in Computer Engineering from Queen's University. 
-                    I'm ready to convert my passion for full-stack development into a career. Grant me the chance, and I'll help to elevate your team's potential!
+                    I am a proficient full-stack developer with a fervor for crafting innovative solutions. Skilled in cloud-based web and 
+                    backend development, backed by a strong track record and holding a BASc in Computer Engineering from Queen's University. 
+                    I'm ready to convert my passion for full-stack development into a career.
                 </p>
             </div>
         </motion.div>
