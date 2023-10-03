@@ -19,7 +19,7 @@ const ContactSection = ({
                 damping: 40,
             }}
             viewport={{ once: true }}
-            className='w-screen h-full flex flex-col items-center justify-center sm:pt-[80px] bg-white'
+            className='w-screen h-full flex flex-col items-center justify-center sm:pt-[80px] bg-white '
             id='contact'
             onMouseEnter={() => setHoverState("contact")}
         >

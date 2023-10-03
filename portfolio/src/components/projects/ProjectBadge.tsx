@@ -153,12 +153,16 @@ export const ProjectBadge = ({
                             </Link>
                         </motion.button>
                         <motion.button 
-                            className='xs:hidden sm:flex w-[100px] h-[32px] border-my-blue border-2 rounded-lg hover:bg-my-blue items-center justify-center'
-                            whileHover={{ scale: 1.1 }}
+                            className={clsx(
+                                'xs:hidden sm:flex w-[100px] h-[32px]  border-2 rounded-lg items-center justify-center',
+                                open && 'bg-red-400 border-red-300',
+                                !open && 'bg-my-blue border-my-blue'
+                                )}
+                            // whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             onClick={() => setOpen(!open)}
                         >
-                            <p className='text-my-blue hover:text-white text-sm w-full h-fit text-center'>LEARN MORE</p>
+                            {open ? <p className='text-white hover:text-white text-sm w-full h-fit text-center'>CLOSE</p> : <p className='text-white text-sm w-full h-fit text-center'>LEARN MORE</p>}
                         </motion.button>
                         <motion.button  
                             className='w-[32px] h-[32px] flex items-center justify-center rounded-lg'

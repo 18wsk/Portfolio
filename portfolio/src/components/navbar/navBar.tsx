@@ -13,7 +13,7 @@ const NavBar = ( {setActive, active}:{
                         shadow-gray-200'
                         >
         <div className='w-fit h-full lg:flex lg:items-center md:hidden sm:hidden xs:hidden'>
-            <img src={Logo} alt="logo"/>
+            <img src={Logo} alt="logo" title="Not Chillis"/>
         </div>
         <div className='w-full h-full flex lg:justify-end xs:justify-center'>
             <div className='lg:w-fit xs:w-full h-full grid grid-cols-5 gap-4 place-items-center'>

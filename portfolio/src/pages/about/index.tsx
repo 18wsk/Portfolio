@@ -20,11 +20,11 @@ const AboutMeSection = ({
                 damping: 40,
             }}
             viewport={{ once: true }}
-            className='w-screen h-min-[800px] flex flex-col items-center justify-center sm:pt-[80px] px-4 bg-my-blue pb-2'
+            className='w-screen h-min-[800px] flex flex-col items-center justify-center sm:pt-[80px] px-4 bg-my-blue pb-2 '
             onMouseEnter={() => setHoverState("about")}
             id='about'
         >
-            <div className="w-full h-full flex items-center justify-center">
+            <div className="w-full h-full flex items-center justify-center ">
                 <div className="w-full h-full py-2"> 
                     <h1 className='text-white font-lato font-bold lg:text-[4rem] xs:text-xl text-center block relative pt-4'>
                         ABOUT 

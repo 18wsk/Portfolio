@@ -55,9 +55,9 @@ const LandingSection = (
                             </div>
                             <div className='w-[160px] flex items-center justify-center '>
                                 <a 
-                                    className='w-full shadow-xl shadow-my-blue/20 font-lato bg-my-blue text-white 
+                                    className='w-full shadow-md shadow-black font-lato bg-my-blue text-white 
                                                 rounded-lg py-2 px-4 flex items-center justify-center gap-x-4 font-bold 
-                                                hover:bg-blue-200 border-4 hover:border-my-blue' 
+                                                hover:bg-blue-200 hover:text-my-blue' 
                                     target="_blank" 
                                     href={resume} 
                                     download={resume.name} 
@@ -70,7 +70,7 @@ const LandingSection = (
                         </div>
                     </div>
                 </div>
-                <div className='w-full h-[32px] flex items-center justify-center sticky-bottom'>
+                <div className='w-full h-[32px] flex items-start justify-center'>
                     <a className="animate-bounce w-[24px] h-[24px] bg-white border-[1px] border-my-blue rounded-full block mx-auto text-center" href="#about">
                         <AiOutlineArrowDown size={"22px"} className='text-my-blue hover:text-white hover:bg-my-blue rounded-full' onClick={() => setHoverState("")}/>
                     </a>

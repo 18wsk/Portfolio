@@ -23,7 +23,7 @@ const Tools = () => {
     }) => {
         return (
             <motion.div 
-                className='xs:w-[32px] xs:h-[32px] md:w-[64px] md:h-[64px] rounded-lg bg-my-blue flex flex-col items-center justify-center p-1'
+                className='xs:w-[32px] xs:h-[32px] md:w-[64px] md:h-[64px] rounded-lg bg-my-blue flex flex-col items-center justify-center p-1 shadow-md shadow-black'
                 whileHover={{ scale: 1.2 }}
                 
             >
@@ -35,7 +35,7 @@ const Tools = () => {
     return (
         <motion.div
             whileHover={{ scale: 1.05 }}
-            className='w-full xs:h-[140px] md:h-[200px] bg-[#f6f6f6] rounded-lg shadow-md shadow-my-blue'
+            className='w-full xs:h-[140px] md:h-[200px] bg-[#f6f6f6] rounded-lg shadow-lg shadow-black'
             >
             <div className='w-full h-fit bg-blue-300 px-4 py-2 rounded-t-lg'>
                 <h1 className='text-white xs:text-sm lg:text-xl font-extrabold whitespace-new-line w-full'>
