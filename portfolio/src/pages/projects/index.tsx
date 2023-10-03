@@ -131,8 +131,8 @@ const ProjectSection = ({
                             title={"swiftchat"} 
                             phone={true} websitelink="http://swiftchat.ca" 
                             githubLink='https://github.com/18wsk/DiscordClone'
-                            message={"An instant messaging platform, employing websockets and REST APIs for real-time communication. Seamlessly adapting to "+
-                                    "various devices through responsive design, it ensures a consistent experience across screens. The application is"
+                            message={"An instant messaging platform, employing web sockets and REST APIs for real-time communication. Seamlessly adapting to "+
+                                    "various devices through responsive design, it ensures a consistent experience across screens. The application is "
                                     +"efficiently deployed on the web, enabling users to connect and converse effortlessly."}
                             tag={"Personal Project"}
                             tools={['Socket.io', 'Zustand', 'TS', 'Responsive', 'TailwindCSS', 'AWS EC2', 'Deployment']}
