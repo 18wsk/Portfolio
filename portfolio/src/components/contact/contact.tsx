@@ -12,7 +12,7 @@ const Contact = () => {
     })
 
     const sendEmail = async () => {
-        await emailjs.send('service_nr375yv', 'template_dldwu8r', formData, "uAZqooKamZXIcA_qD")
+        await emailjs.send('service_db40yin', 'template_ctcn7n6', formData, "shjREojTKVypBiOSB")
         .then(async function() {
             toast("success");
         }).catch(async function() {
