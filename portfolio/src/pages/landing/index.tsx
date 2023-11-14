@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { useEffect, useState } from 'react'
 import Socials from '../../components/landing/socials'
-import { AiOutlineArrowDown, AiOutlineDownload } from 'react-icons/ai';
+import { AiOutlineDownload } from 'react-icons/ai';
 
 const LandingSection = (
     { 
@@ -70,11 +70,11 @@ const LandingSection = (
                         </div>
                     </div>
                 </div>
-                <div className='w-full h-[32px] flex items-start justify-center'>
+                {/* <div className='w-full h-[32px] flex items-start justify-center'>
                     <a className="animate-bounce w-[24px] h-[24px] bg-white border-[1px] border-my-blue rounded-full block mx-auto text-center" href="#about">
                         <AiOutlineArrowDown size={"22px"} className='text-my-blue hover:text-white hover:bg-my-blue rounded-full' onClick={() => setHoverState("")}/>
                     </a>
-                </div>
+                </div> */}
             </div>
         </motion.div>
     )
