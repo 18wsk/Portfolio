@@ -22,7 +22,7 @@ export const ProjectBadge = ({
     img: any,
     title: string,
     websitelink?: string,
-    githubLink: string,
+    githubLink?: string,
     phone?: boolean,
     message: string,
     tools: string [],
@@ -125,7 +125,10 @@ export const ProjectBadge = ({
                                 </motion.div>
                         }
                 </div>
-                <div className={`w-full xs:h-[100px] lg:h-[100px] flex flex-col lg:flex-row lg:flex-cols-2 items-center justify-center gap-x-4 gap-y-4 max-w-[400px] 
+                <div className="w-full h-fit p-2 font-bold uppercase font-orbitron text-center">
+                    {title}
+                </div>
+                <div className={`w-full xs:h-[100px] lg:h-[100px] flex flex-col lg:flex-row lg:flex-cols-3 items-center justify-center gap-x-4 gap-y-4 max-w-[400px] 
                     xs:justify-end`
                 }>
                     <div className="w-full h-full flex flex-col lg:flex-row gap-y-2 lg:gap-y-0 gap-x-4 items-center justify-center">
@@ -143,15 +146,18 @@ export const ProjectBadge = ({
                                 </Link>
                             </motion.button>
                         }
-                        <motion.button  
-                            className='w-[32px] h-[32px] flex items-center justify-center rounded-lg'
-                            whileHover={{ scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                            >
-                            <Link to={githubLink} target="_blank">
-                                <FiGithub className='w-[30px] h-[30px] text-my-blue fill-white hover:bg-my-blue rounded-lg'/>
-                            </Link>
-                        </motion.button>
+                        {
+                            githubLink &&
+                            <motion.button  
+                                className='w-[32px] h-[32px] flex items-center justify-center rounded-lg'
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.9 }}
+                                >
+                                <Link to={githubLink} target="_blank">
+                                    <FiGithub className='w-[30px] h-[30px] text-my-blue fill-white hover:bg-my-blue rounded-lg'/>
+                                </Link>
+                            </motion.button>
+                        }
                         <motion.button 
                             className={clsx(
                                 'xs:hidden sm:flex w-[100px] h-[32px]  border-2 rounded-lg items-center justify-center',

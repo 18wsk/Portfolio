@@ -14,10 +14,6 @@ const LandingPage = () => {
     const [loaded, setLoaded] = useState<boolean>(false);
 
     useEffect(() => {
-        console.log(active);
-    },  [active]);
-
-    useEffect(() => {
         const loadingTimeout = setTimeout(() => {
             setLoaded(true);
         }, 500);
