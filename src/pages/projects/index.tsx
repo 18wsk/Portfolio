@@ -12,6 +12,9 @@ const ProjectSection = ({
     const sadstoics = require('../../assets/sadstoics-laptop.jpeg');
     const swiftchat = require('../../assets/swiftchat-phone.jpg');
     const docQshare = require('../../assets/docQshare.png');
+    const theGrizzlyGrill = require('../../assets/thegrizzlygrill-pc.PNG');
+    const quizIt = require('../../assets/openai-pc.JPG');
+    const quizItPhone = require('../../assets/openai-iphone.JPG')
 
     const [openModal, setOpenModal] = useState<boolean>(false);
     const [modalProps, setModalProps] = useState<{title: string, tag: string, message: string, tools: string[]}>({
@@ -104,54 +107,62 @@ const ProjectSection = ({
                         <div className='w-[32px] h-[4px] bg-black rounded-lg'/>
                     </div>
                 </div>
-                <div className={'w-full h-full flex flex-col lg:flex-row lg:flex-cols-2 xs:items-center lg:items-center xs:justify-center gap-x-4 sm:p-4 '}>
-                    <div className='w-full xs:h-full xs:pb-[80px] lg:h-3/4 flex flex-col lg:flex-row'>
-                        <ProjectBadge 
-                            img={sadstoics}
-                            title={"sadstoics"} 
-                            githubLink='https://github.com/18wsk/sadstoics'
-                            message={"Unveiling a merchandise venture with a React-based website powered by JavaScript, TypeScript, Redux, and REST APIs."+ 
-                            "Elevating user experiences through AWS integration and modern design aesthetics with Tailwind CSS."}
-                            tag={"My newly established enterprise"}
-                            tools={[
-                                'React', 
-                                'Redux', 
-                                'AWS', 
-                                'NodeJS', 
-                                'ExpressJS', 
-                                'MongoDB', 
-                                'REST'
-                            ]}
-                            openModal={openModal}
-                            setOpenModal={setOpenModal}
-                            setModalProps={setModalProps}
-                        />
-                        <ProjectBadge 
-                            img={swiftchat} 
-                            title={"swiftchat"} 
-                            phone={true} websitelink="http://swiftchat.ca" 
-                            githubLink='https://github.com/18wsk/DiscordClone'
-                            message={"An instant messaging platform, employing web sockets and REST APIs for real-time communication. Seamlessly adapting to "+
-                                    "various devices through responsive design, it ensures a consistent experience across screens. The application is "
-                                    +"efficiently deployed on the web, enabling users to connect and converse effortlessly."}
-                            tag={"Personal Project"}
-                            tools={['Socket.io', 'Zustand', 'TS', 'Responsive', 'TailwindCSS', 'AWS EC2', 'Deployment']}
-                            openModal={openModal}
-                            setOpenModal={setOpenModal}
-                            setModalProps={setModalProps}
-                        />
-                        <ProjectBadge 
-                            img={docQshare} 
-                            title={"docQshare"} 
-                            githubLink='https://github.com/ArshKochhar/DocQshare'
-                            message={"Revolutionize document sharing with our blockchain-based platform. Guaranteed file integrity, verified transactions, and secure access through smart contracts redefine how documents are shared. Embrace the future of document sharing today."}
-                            tag={"Queen's University Capstone Project"}
-                            tools={['React', 'Redux', 'TypeScript', 'JavaScript', 'TailwindCSS', 'AWS RDS']}
-                            openModal={openModal}
-                            setOpenModal={setOpenModal}
-                            setModalProps={setModalProps}
-                        />
-                    </div>
+                <div className="w-3/4 h-full grid xs:grid-cols-1 lg:grid-cols-2 xs:grid-rows-2 md:grid-rows-1 items-center justify-center">
+                    <ProjectBadge 
+                        img={quizItPhone} 
+                        title={"quizit"} 
+                        phone={true} 
+                        websitelink="https://quizit-ai.netlify.app/" 
+                        githubLink='https://github.com/18wsk/quizit'
+                        message={`Experience seamless quiz creation with our AI-driven generator! Craft 10-question quizzes effortlessly, share them, 
+                        and challenge friends to test their skills. Powered by Vite and React, our frontend integrates Axios API for efficient 
+                        data-handling. TailwindCSS ensures a sleek design, while OpenAI Assistant Management enhances the quiz-building experience. 
+                        Elevate your quiz game with Quizit!`}
+                        tag={"Personal Project"}
+                        tools={['React', 'Express', 'OpenAI', 'Axios', 'TailwindCSS', 'Netlify', 'Render']}
+                        openModal={openModal}
+                        setOpenModal={setOpenModal}
+                        setModalProps={setModalProps}
+                    />
+                    <ProjectBadge 
+                        img={theGrizzlyGrill} 
+                        title={"The Grizzly Grill"} 
+                        phone={false} 
+                        websitelink="https://thegrizzlygrill.ca/" 
+                        message={"Boost your Kingston restaurant online! I've crafted a Shopify site with seamless sales, ad integration, and a responsive design. Custom Liquid components and a clean UI ensure a standout digital presence."}
+                        tag={"Professional Project"}
+                        tools={['Shopify', 'LiquiJs', 'Responsive']}
+                        openModal={openModal}
+                        setOpenModal={setOpenModal}
+                        setModalProps={setModalProps}
+                    />
+                    <ProjectBadge 
+                        img={docQshare} 
+                        title={"docQshare"} 
+                        githubLink='https://github.com/ArshKochhar/DocQshare'
+                        message={`Revolutionize document sharing with our blockchain-based platform. Guaranteed file integrity, verified transactions, 
+                        and secure access through smart contracts redefine how documents are shared. Embrace the future of document sharing today.`}
+                        tag={"Queen's University Capstone Project"}
+                        tools={['React', 'Redux', 'TypeScript', 'JavaScript', 'TailwindCSS', 'AWS RDS']}
+                        openModal={openModal}
+                        setOpenModal={setOpenModal}
+                        setModalProps={setModalProps}
+                    />
+                    <ProjectBadge 
+                        img={swiftchat} 
+                        title={"swiftchat"} 
+                        phone={true} 
+                        websitelink="http://swiftchat.ca" 
+                        githubLink='https://github.com/18wsk/DiscordClone'
+                        message={`An instant messaging platform, employing web sockets and REST APIs for real-time communication. Seamlessly adapting to
+                        various devices through responsive design, it ensures a consistent experience across screens. The application is
+                        efficiently deployed on the web, enabling users to connect and converse effortlessly.`}
+                        tag={"Personal Project"}
+                        tools={['Socket.io', 'Zustand', 'TS', 'Responsive', 'TailwindCSS', 'AWS EC2', 'Deployment']}
+                        openModal={openModal}
+                        setOpenModal={setOpenModal}
+                        setModalProps={setModalProps}
+                    />
                 </div>
             </div>
         </motion.div>
