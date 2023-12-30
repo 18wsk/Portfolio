@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.a4fd2972.css",
-    "main.js": "/Portfolio/static/js/main.2e6b8855.js",
+    "main.js": "/Portfolio/static/js/main.e1d678a6.js",
     "static/media/thegrizzlygrill-pc.PNG": "/Portfolio/static/media/thegrizzlygrill-pc.47279be42b2fca0eeac8.PNG",
     "static/media/William_Kennedy_Resume.pdf": "/Portfolio/static/media/William_Kennedy_Resume.29aa3069ab553684d70c.pdf",
     "static/media/sadstoics-laptop.jpeg": "/Portfolio/static/media/sadstoics-laptop.79bdffc4350608f60b68.jpeg",
@@ -16,10 +16,10 @@
     "static/media/logo_nobg.png": "/Portfolio/static/media/logo_nobg.413dbb33f1bb74706ef0.png",
     "index.html": "/Portfolio/index.html",
     "main.a4fd2972.css.map": "/Portfolio/static/css/main.a4fd2972.css.map",
-    "main.2e6b8855.js.map": "/Portfolio/static/js/main.2e6b8855.js.map"
+    "main.e1d678a6.js.map": "/Portfolio/static/js/main.e1d678a6.js.map"
   },
   "entrypoints": [
     "static/css/main.a4fd2972.css",
-    "static/js/main.2e6b8855.js"
+    "static/js/main.e1d678a6.js"
   ]
 }
