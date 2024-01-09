@@ -76,7 +76,7 @@ export const ProjectBadge = ({
                                 src={img} 
                                 alt={title}
                                 className={clsx('w-full h-full object-contain',
-                                    phone && "xs:h-full xs:w-full lg:w-[120px] lg:h-[200px] xl:h-[300px] "
+                                    phone && "xs:h-full xs:w-full lg:w-[120px] lg:h-[200px] xl:h-[300px]"
                                 )}
                                 id={title}
                                 initial={{ opacity: 0, size: 0 }}
@@ -92,18 +92,18 @@ export const ProjectBadge = ({
                                     className={ `xs:h-full xs:w-[300px] sm:w-[400px] sm:h-[220px] lg:h-[280px] lg:w-[280px] xl:w-[400px] xl:h-[300px]
                                             bg-my-blue text-white rounded-lg p-1 flex items-center justify-center`}
                                 >
-                                    <div className="h-full w-full p-1">
+                                    <div className="h-full w-full p-2">
                                         <div className="w-full h-full flex flex-col items-center justify-center">
                                             <p className="text-xl font-extrabold uppercase text-start w-full pb-[7px]">
                                                 {title} 
                                             </p>
-                                            <p className="text-xs uppercase text-start w-full pb-[8px]">
+                                            <p className="text-xs uppercase text-start w-full pb-[8px] underline underline-offset-2">
                                                 {tag} 
                                             </p>
-                                            <p className='text-sm font-lato flex items-center justify-center'>
+                                            <p className='h-full text-sm font-lato flex items-center justify-center'>
                                                 {message}
                                             </p>
-                                            <div className="w-full h-full flex items-center">
+                                            <div className="w-full h-fit flex items-center">
                                                 <div className={`w-full h-fit grid grid-cols-4 gap-x-1 gap-y-1 grid-rows-[${tools.length % 6}] `}>
                                                     {tools.map((tool: string) => {
                                                         return (
@@ -125,7 +125,7 @@ export const ProjectBadge = ({
                                 </motion.div>
                         }
                 </div>
-                <div className="w-full h-fit p-2 font-bold uppercase font-orbitron text-center">
+                <div className="w-full h-fit p-2 font-bold font-orbitron text-center text-my-blue">
                     {title}
                 </div>
                 <div className={`w-full xs:h-[100px] lg:h-[100px] flex flex-col lg:flex-row lg:flex-cols-3 items-center justify-center gap-x-4 gap-y-4 max-w-[400px] 
