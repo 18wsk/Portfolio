@@ -9,11 +9,9 @@ const ProjectSection = ({
 {
     setHoverState(hov: string): void
 }) => {
-    const sadstoics = require('../../assets/sadstoics-laptop.jpeg');
     const swiftchat = require('../../assets/swiftchat-phone.jpg');
     const docQshare = require('../../assets/docQshare.png');
     const theGrizzlyGrill = require('../../assets/thegrizzlygrill-pc.PNG');
-    const quizIt = require('../../assets/openai-pc.JPG');
     const quizItPhone = require('../../assets/openai-iphone.JPG')
 
     const [openModal, setOpenModal] = useState<boolean>(false);
@@ -147,7 +145,7 @@ const ProjectSection = ({
                     />
                     <ProjectBadge 
                         img={swiftchat} 
-                        title={"SwiftChat"} 
+                        title={"SwiftChat **UNDER MAINTENANCE**"} 
                         phone={true} 
                         websitelink="http://swiftchat.ca" 
                         githubLink='https://github.com/18wsk/DiscordClone'
