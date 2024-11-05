@@ -5,10 +5,25 @@ const Timeline = () => {
     const rio = require('src/assets/rio.png');
     const cg = require('src/assets/cg.jpg');
     const eng = require('src/assets/eng.jpg');
+    const tc = require('src/assets/Transport-Canada.jpg');
 
     return (
         <div className="w-full h-full flex items-center justify-center" >
             <ol className="relative border-l border-blue-300 h-full flex flex-col justify-between">
+            <li className="mb-4 ml-6 ">
+                    <TimelineModal
+                        img={tc}
+                        title="IT Technician, Aircraft Services Portfolio" 
+                        date="March, 2024" 
+                        location={"Transport Canada - (Hybrid) Toronto, ON"} 
+                        description={
+                            `Collaborating with multiple technical teams to deliver reports and comprehensive applications that enhance operational efficiency 
+                            for the Aircraft Service Directorate and key clients, including the Canadian Coast Guard, Department of National Defence, and Civil 
+                            Aviation.`
+                        }
+                    />
+                    
+                </li>
                 <li className="mb-4 ml-6 ">
                     <TimelineModal
                         img={eng}
