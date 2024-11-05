@@ -145,7 +145,7 @@ const ProjectSection = ({
                     />
                     <ProjectBadge 
                         img={swiftchat} 
-                        title={"SwiftChat **UNDER MAINTENANCE**"} 
+                        title={"**UNDER MAINTENANCE**"} 
                         phone={true} 
                         websitelink="http://swiftchat.ca" 
                         githubLink='https://github.com/18wsk/DiscordClone'
