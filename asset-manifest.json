@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.a4fd2972.css",
-    "main.js": "/Portfolio/static/js/main.4e2571bb.js",
+    "main.js": "/Portfolio/static/js/main.17da17a9.js",
     "static/media/thegrizzlygrill-pc.PNG": "/Portfolio/static/media/thegrizzlygrill-pc.47279be42b2fca0eeac8.PNG",
     "static/media/William_Kennedy_Resume.pdf": "/Portfolio/static/media/William_Kennedy_Resume.0b5aedddd6e21b3044bb.pdf",
     "static/media/will_pfp.jpg": "/Portfolio/static/media/will_pfp.4e60ed2cfbce23ba6046.jpg",
@@ -15,10 +15,10 @@
     "static/media/Transport-Canada.jpg": "/Portfolio/static/media/Transport-Canada.cd96436e86309f406daa.jpg",
     "index.html": "/Portfolio/index.html",
     "main.a4fd2972.css.map": "/Portfolio/static/css/main.a4fd2972.css.map",
-    "main.4e2571bb.js.map": "/Portfolio/static/js/main.4e2571bb.js.map"
+    "main.17da17a9.js.map": "/Portfolio/static/js/main.17da17a9.js.map"
   },
   "entrypoints": [
     "static/css/main.a4fd2972.css",
-    "static/js/main.4e2571bb.js"
+    "static/js/main.17da17a9.js"
   ]
 }
