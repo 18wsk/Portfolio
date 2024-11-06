@@ -14,7 +14,7 @@ const Timeline = () => {
                     <TimelineModal
                         img={tc}
                         title="IT Technician, Aircraft Services Portfolio" 
-                        date="March, 2024" 
+                        date="March, 2024 - Present" 
                         location={"Transport Canada - (Hybrid) Toronto, ON"} 
                         description={
                             `Collaborating with multiple technical teams to deliver reports and comprehensive applications that enhance operational efficiency 
