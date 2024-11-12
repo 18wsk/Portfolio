@@ -13,13 +13,13 @@ const Timeline = () => {
             <li className="mb-4 ml-6 ">
                     <TimelineModal
                         img={tc}
-                        title="IT Technician, Aircraft Services Portfolio" 
+                        title="Power Platform Developer, Aircraft Services Portfolio" 
                         date="March, 2024 - Present" 
                         location={"Transport Canada - (Hybrid) Toronto, ON"} 
                         description={
                             `Collaborating with multiple technical teams to deliver reports and comprehensive applications that enhance operational efficiency 
                             for the Aircraft Service Directorate and key clients, including the Canadian Coast Guard, Department of National Defence, and Civil 
-                            Aviation.`
+                            Aviation via a combination of Power Apps, Dataverse and PowerBI related technologies.`
                         }
                     />
                     

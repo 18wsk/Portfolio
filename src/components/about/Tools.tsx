@@ -6,8 +6,17 @@ import {
     BiLogoAws, 
     BiLogoReact,
     BiLogoNodejs,
-    BiLogoMongodb
+    BiLogoMongodb,
+    BiInfinite
 } from "react-icons/bi"
+import { 
+    SiDataverse, 
+    SiAzuredevops,
+    SiPowerapps,
+    SiPowerautomate,
+    SiPowerbi
+
+} from "react-icons/si";
 import { FaPeopleCarry, FaRegObjectUngroup } from "react-icons/fa"
 import { BsDatabaseAdd, BsPhoneFill, BsCodeSlash, BsGithub } from "react-icons/bs"
 import { motion } from "framer-motion"
@@ -51,7 +60,7 @@ const Tools = () => {
                 <div className="w-full text-my-blue xs:text-sm lg:text-xs font-extrabold flex items-center justify-end">{skillPressed}</div>
             </div>
             <div className='w-full h-3/4 flex flex-col items-center justify-center p-2'>
-                <div className='w-fit h-fit grid grid-cols-8 grid-rows-2 px-2 py-2 xs:gap-x-1 xs:gap-y-1 lg:gap-x-1 lg:gap-y-1'>
+                <div className='w-fit h-fit grid grid-cols-11 grid-rows-2 px-2 py-2 xs:gap-x-1 xs:gap-y-1 lg:gap-x-1 lg:gap-y-1'>
                     <ToolBadge name={"React"} icon={<BiLogoReact className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"NodeJS"} icon={<BiLogoNodejs className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"HTML"} icon={<AiOutlineHtml5 className='w-[32px] h-[32px] fill-white'/>}/>
@@ -67,7 +76,13 @@ const Tools = () => {
                     <ToolBadge name={"Data and Algorithms"} icon={<BsCodeSlash className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"Testing"} icon={<AiFillBug className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"Agile"} icon={<FaPeopleCarry className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"CI/CD"} icon={<BiInfinite className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"GitHub"} icon={<BsGithub className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"Dataverse"} icon={<SiDataverse className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"Azure Services"} icon={<SiAzuredevops className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"PowerApps"} icon={<SiPowerapps className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"Power Automate"} icon={<SiPowerautomate className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"PowerBI"} icon={<SiPowerbi className='w-[32px] h-[32px] fill-white'/>}/>
                 </div>
             </div>
         </motion.div>
