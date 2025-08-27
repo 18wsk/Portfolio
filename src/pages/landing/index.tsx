@@ -11,7 +11,7 @@ const LandingSection = (
         setHoverState(hov: string): void
     }) => {
     const pfp =  require("../../assets/will_pfp.jpg");
-    const resume = require("../../assets/William_Kennedy_Resume_2025.pdf");
+    const resume = "" // require("../../assets/William_Kennedy_Resume_2025.pdf");
 
     const [text, setText] = useState("Full Stack Developer");
 
