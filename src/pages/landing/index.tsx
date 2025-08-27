@@ -11,7 +11,7 @@ const LandingSection = (
         setHoverState(hov: string): void
     }) => {
     const pfp =  require("../../assets/will_pfp.jpg");
-    // const resume = require("../../assets/William_Kennedy_Resume_2025.pdf");
+    const resume = require("../../assets/William_Kennedy_Resume_2025.pdf");
 
     const [text, setText] = useState("Full Stack Developer");
 
@@ -54,7 +54,7 @@ const LandingSection = (
                                 </h1>
                             </div>
                             <div className='w-[160px] flex items-center justify-center '>
-                                {/* <a 
+                                <a 
                                     className='w-full shadow-md shadow-black font-lato bg-my-blue text-white 
                                                 rounded-lg py-2 px-4 flex items-center justify-center gap-x-4 font-bold 
                                                 hover:bg-blue-200 hover:text-my-blue' 
@@ -64,7 +64,7 @@ const LandingSection = (
                                     rel="noreferrer"
                                 >
                                     {<AiOutlineDownload className='w-[28px] h-[28px]'/>} RESUME
-                                </a> */}
+                                </a>
                             </div>
                             <Socials/>
                         </div>
