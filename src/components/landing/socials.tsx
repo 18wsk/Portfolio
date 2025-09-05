@@ -11,16 +11,18 @@ const Socials = () => {
                 to="https://github.com/18wsk" 
                 target="_blank" 
                 rel="noopener" 
-                className='hover:bg-blue-300 bg-my-blue rounded-full shadow-md shadow-black w-[40px] h-[40px] 
+                className='hover:bg-blue-300 bg-my-blue rounded-full shadow-md shadow-black w-[60px] h-[60px] 
                         flex flex-col items-center justify-center'>
-                <FiGithub size={30} color={"#FFFFFF"} />
+                <FiGithub size={45} color={"#FFFFFF"} />
             </Link>
-            <Link to="https://www.linkedin.com/in/william-kennedy-0a917319b/" target="_blank" rel="noopener" className='hover:bg-blue-300 bg-my-blue rounded-full shadow-md shadow-black w-[40px] h-[40px] flex flex-col items-center justify-center'>
-                <AiOutlineLinkedin size={30} color={"#FFFFFF"} />
+            <Link 
+                to="https://www.linkedin.com/in/william-kennedy-0a917319b/" 
+                target="_blank" 
+                rel="noopener" 
+                className='hover:bg-blue-300 bg-my-blue rounded-full shadow-md shadow-black w-[60px] h-[60px] 
+                        flex flex-col items-center justify-center'>
+                <AiOutlineLinkedin size={45} color={"#FFFFFF"} />
             </Link>
-            {/* <Link to="https://twitter.com/notchillis" target="_blank" rel="noopener" className='hover:bg-blue-300 bg-my-blue rounded-full shadow-md shadow-black w-[40px] h-[40px] flex flex-col items-center justify-center'>
-                <img src={x} alt={"x"} className='h-[30px] w-[30px] p-1' />
-            </Link> */}
         </div>
     )
 }

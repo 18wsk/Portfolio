@@ -61,6 +61,11 @@ const Tools = () => {
             </div>
             <div className='w-full h-3/4 flex flex-col items-center justify-center p-2'>
                 <div className='w-fit h-fit grid grid-cols-11 grid-rows-2 px-2 py-2 xs:gap-x-1 xs:gap-y-1 lg:gap-x-1 lg:gap-y-1'>
+                    <ToolBadge name={"Dataverse"} icon={<SiDataverse className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"Azure Services"} icon={<SiAzuredevops className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"PowerApps"} icon={<SiPowerapps className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"Power Automate"} icon={<SiPowerautomate className='w-[32px] h-[32px] fill-white'/>}/>
+                    <ToolBadge name={"PowerBI"} icon={<SiPowerbi className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"React"} icon={<BiLogoReact className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"NodeJS"} icon={<BiLogoNodejs className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"HTML"} icon={<AiOutlineHtml5 className='w-[32px] h-[32px] fill-white'/>}/>
@@ -78,11 +83,6 @@ const Tools = () => {
                     <ToolBadge name={"Agile"} icon={<FaPeopleCarry className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"CI/CD"} icon={<BiInfinite className='w-[32px] h-[32px] fill-white'/>}/>
                     <ToolBadge name={"GitHub"} icon={<BsGithub className='w-[32px] h-[32px] fill-white'/>}/>
-                    <ToolBadge name={"Dataverse"} icon={<SiDataverse className='w-[32px] h-[32px] fill-white'/>}/>
-                    <ToolBadge name={"Azure Services"} icon={<SiAzuredevops className='w-[32px] h-[32px] fill-white'/>}/>
-                    <ToolBadge name={"PowerApps"} icon={<SiPowerapps className='w-[32px] h-[32px] fill-white'/>}/>
-                    <ToolBadge name={"Power Automate"} icon={<SiPowerautomate className='w-[32px] h-[32px] fill-white'/>}/>
-                    <ToolBadge name={"PowerBI"} icon={<SiPowerbi className='w-[32px] h-[32px] fill-white'/>}/>
                 </div>
             </div>
         </motion.div>

@@ -46,35 +46,32 @@ const LandingSection = (
                         <div className='w-[440px] h-fit xs:hidden lg:flex items-end justify-start'>
                             <h1 className='font-lato lg:text-2xl font-bold text-black pb-12 '>Hi, I'm</h1>
                         </div>
-                        <h1 className='font-lato xs:pt-4 sm:pt-12 lg:pt-0 sm:text-6xl xs:text-3xl font-extrabold text-black underline decoration-my-blue'> William Kennedy</h1>
-                        <div className='h-full w-full flex flex-col items-center justify-around '>
+                        <h1 className='font-lato xs:pt-4 sm:pt-12 lg:pt-0 sm:text-6xl xs:text-3xl font-extrabold text-black underline decoration-my-blue'> 
+                            William Kennedy
+                        </h1>
+                        <div className='h-full w-full flex flex-col items-center justify-start xs:flex-col xs:gap-x-0 xs:gap-y-4 sm:flex-col sm:gap-x-8 sm:gap-y-6 lg:gap-y-12 pt-2'>
                             <div className='w-max'>
                                 <h1 className="typing-text">
                                     {text}
                                 </h1>
                             </div>
-                            <div className='w-[160px] flex items-center justify-center '>
+                            <div className='w-[250px] flex items-center justify-center '>
                                 <a 
-                                    className='w-full shadow-md shadow-black font-lato bg-my-blue text-white 
-                                                rounded-lg py-2 px-4 flex items-center justify-center gap-x-4 font-bold 
-                                                hover:bg-blue-200 hover:text-my-blue' 
+                                    className='w-full h-[80px] shadow-md shadow-black font-lato bg-my-blue text-white 
+                                                rounded-lg p-4 px-4 flex items-center justify-center gap-x-4 font-bold 
+                                                hover:bg-blue-200 hover:text-my-blue text-xl' 
                                     target="_blank" 
                                     href={resume} 
                                     download={resume.name} 
                                     rel="noreferrer"
                                 >
-                                    {<AiOutlineDownload className='w-[28px] h-[28px]'/>} RESUME
+                                    {<AiOutlineDownload className='w-[40px] h-[40px]'/>} RESUME
                                 </a>
                             </div>
                             <Socials/>
                         </div>
                     </div>
                 </div>
-                {/* <div className='w-full h-[32px] flex items-start justify-center'>
-                    <a className="animate-bounce w-[24px] h-[24px] bg-white border-[1px] border-my-blue rounded-full block mx-auto text-center" href="#about">
-                        <AiOutlineArrowDown size={"22px"} className='text-my-blue hover:text-white hover:bg-my-blue rounded-full' onClick={() => setHoverState("")}/>
-                    </a>
-                </div> */}
             </div>
         </motion.div>
     )
