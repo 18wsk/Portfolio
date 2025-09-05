@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7417a253.css",
-    "main.js": "/Portfolio/static/js/main.a479f66a.js",
+    "main.css": "/Portfolio/static/css/main.00507878.css",
+    "main.js": "/Portfolio/static/js/main.727e7cc5.js",
     "static/media/thegrizzlygrill-pc.PNG": "/Portfolio/static/media/thegrizzlygrill-pc.47279be42b2fca0eeac8.PNG",
     "static/media/will_pfp.jpg": "/Portfolio/static/media/will_pfp.4e60ed2cfbce23ba6046.jpg",
     "static/media/William_Kennedy_Resume_2025.pdf": "/Portfolio/static/media/William_Kennedy_Resume_2025.fadcfaa82c42498c15ea.pdf",
@@ -14,11 +14,11 @@
     "static/media/logo_nobg.png": "/Portfolio/static/media/logo_nobg.261b5cb8463b1353f109.png",
     "static/media/Transport-Canada.jpg": "/Portfolio/static/media/Transport-Canada.cd96436e86309f406daa.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.7417a253.css.map": "/Portfolio/static/css/main.7417a253.css.map",
-    "main.a479f66a.js.map": "/Portfolio/static/js/main.a479f66a.js.map"
+    "main.00507878.css.map": "/Portfolio/static/css/main.00507878.css.map",
+    "main.727e7cc5.js.map": "/Portfolio/static/js/main.727e7cc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.7417a253.css",
-    "static/js/main.a479f66a.js"
+    "static/css/main.00507878.css",
+    "static/js/main.727e7cc5.js"
   ]
 }
