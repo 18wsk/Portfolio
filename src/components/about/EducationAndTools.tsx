@@ -37,7 +37,7 @@ const EducationAndTools = () => {
                     <img 
                         src={img} 
                         alt={name}
-                        className={`shadow-xl flex items-center justify-center w-[64px] h-[64px] rounded-full -left-6 ring-2 ring-my-blue dark:bg-my-blue`}
+                        className={`shadow-xl flex items-center justify-center xs:w-[70px] xs:h-[70px] sm:w-[90px] sm:h-[90px] md:w-[90px] md:h-[90px] lg:w-[64px] lg:h-[64px] rounded-full -left-6 ring-2 ring-my-blue dark:bg-my-blue`}
                     />
                 </a>
                 <p className='xs:hidden text-xs text-white text-center w-full h-fit'>{name}</p>
@@ -53,9 +53,9 @@ const EducationAndTools = () => {
                 <h1 className='text-white xs:text-sm lg:text-xl font-extrabold whitespace-new-line w-full'>
                     Education & Certifications
                 </h1>
-                <div className="w-full text-my-blue xs:text-sm lg:text-xs font-extrabold flex items-center justify-end">{skillPressed}</div>
+                <div className="w-full h-full text-my-blue xs:text-sm lg:text-xs font-extrabold flex items-center justify-end">{skillPressed}</div>
             </div>
-            <div className='w-full h-fit flex flex-col items-center justify-center'>
+            <div className='w-full h-fit flex flex-col items-center justify-center xs:pt-3 sm:pt-3 lg:pt-0'>
                 <div className='w-fit h-full grid grid-cols-4 grid-rows-1 px-2 py-2 xs:gap-x-1 xs:gap-y-1 lg:gap-x-1 lg:gap-y-1'>
                     <EducationAndToolBadge name={"B.A.Sc Computer Engineering Queens University"} img={queens_eng} link={"https://smithengineering.queensu.ca/ece/undergraduate/computer-engineering/index.html"} />
                     <EducationAndToolBadge name={"PL-200 Certified"} img={pl_200_img} link={"https://learn.microsoft.com/en-us/credentials/certifications/power-platform-functional-consultant-associate/?practice-assessment-type=certification"} />
