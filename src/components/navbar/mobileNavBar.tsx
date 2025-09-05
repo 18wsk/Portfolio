@@ -127,16 +127,6 @@ const MobileNavBar : FC<{ setActive: (id: string) => void; active: string;}> = (
                                 </Link>
                             </div>
                         </Menu.Item>
-                        <Menu.Item>
-                            <div className="w-full h-[46px] flex items-center justify-center">
-                                <Link 
-                                    to="https://twitter.com/notchillis" 
-                                    target="_blank" rel="noopener" 
-                                    className=' bg-white rounded-full shadow-md shadow-my-blue/60 w-[40px] h-[40px] flex flex-col items-center justify-center'>
-                                    <BsTwitter size={30} color={"#0f5199"} />
-                                </Link>
-                            </div>
-                        </Menu.Item>
                     </Menu.Items>
                 </Transition>
             </Menu>

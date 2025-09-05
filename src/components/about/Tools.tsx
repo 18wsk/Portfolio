@@ -41,7 +41,7 @@ const Tools = () => {
                     setFlip(!flip)
                     setSkillPressed(name)
                 }}
-                
+                onHoverStart={() => setSkillPressed(name)}
             >
                     {icon}
                     <p className='xs:hidden md:block text-xs text-white text-center w-full h-fit'>{name}</p>
@@ -53,7 +53,7 @@ const Tools = () => {
             whileHover={{ scale: 1.05 }}
             className='w-full xs:h-[140px] md:h-[200px] bg-[#f6f6f6] rounded-lg shadow-lg shadow-black'
             >
-            <div className='w-full h-fit bg-blue-300 px-4 py-2 rounded-t-lg flex flex-cols-2'>
+            <div className='w-full h-fit bg-blue-300 px-4 py-1 rounded-t-lg flex flex-cols-2'>
                 <h1 className='text-white xs:text-sm lg:text-xl font-extrabold whitespace-new-line w-full'>
                     Tools 
                 </h1>

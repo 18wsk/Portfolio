@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import React from 'react'
 import Tools from '../../components/about/Tools'
 import Skills from '../../components/about/Skills'
 import AboutMe from '../../components/about/AboutMe'
@@ -38,18 +37,18 @@ const AboutMeSection = ({
                         <AboutMe/>
                         <Skills/>
                         <Tools/>
-                        
+                        <EducationAndTools/>
                     </div>
                     {/* Desktop layout */}
                     <div className='hidden lg:flex w-full h-[540px] items-center justify-center gap-x-8'>
                         <div className='w-fit h-[500px] flex flex-col items-center justify-center gap-y-2 pb-8'>
                             <AboutMe/>
                         </div>
-                        <div className='lg:w-3/4 xl:w-1/2 xl:min-w-[850px] h-[540px]'>
-                            <div className='w-full h-full flex flex-col items-start gap-y-8'>
+                        <div className='lg:w-3/4 xl:w-1/2 xl:min-w-[850px] h-full'>
+                            <div className='w-full h-full flex flex-col items-start gap-y-1'>
                                 <Skills/>
                                 <Tools/>
-                                {/* <EducationAndTools/> */}
+                                <EducationAndTools/>
                             </div>
                         </div>
                     </div>

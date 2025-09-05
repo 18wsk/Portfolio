@@ -37,7 +37,7 @@ const LandingSection = (
             onMouseEnter={() => setHoverState("home")}
             id="home"
         >
-            <div className='w-fit h-full grid grid-rows-3 gap-x-12'>
+            <div className='w-fit h-full grid grid-rows-3 gap-x-12 xs:pt-6 sm:pt-0'>
                 <div className='xs:h-4/5 lg:h-full row-span-3 lg:w-max xs:w-screen  grid place-items-center lg:grid-cols-2 lg:gap-x-[32px]'>
                     <div className='w-full h-full flex items-center justify-center rounded-full drop-shadow-2xl'>
                         <img src={pfp} alt="logo" className='shadow-xl shadow-my-blue/20 mx-auto flex shrink rounded-full border-solid border-[0px] border-my-blue xs:h-50 xs:w-60 lg:w-[480px] lg:h-[480px]'/>
