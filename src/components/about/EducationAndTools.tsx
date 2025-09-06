@@ -1,9 +1,3 @@
-
-import { 
-    SiDataverse, 
-    SiAzuredevops,
-    SiPowerapps,
-} from "react-icons/si";
 import { motion } from "framer-motion"
 import { useState } from "react"
 
