@@ -7,6 +7,7 @@ const EducationAndTools = () => {
     const pl_200_img = require('src/assets/pl_200_img.png');
     const pl_900_img = require('src/assets/pl_900_img.png');
     const queens_eng = require('src/assets/queens_eng.png');
+    const ai_900_img = require('src/assets/ai_900_img.png');
     const EducationAndToolBadge = ({
         name,
         img,
@@ -50,8 +51,9 @@ const EducationAndTools = () => {
                 <div className="w-full h-full text-my-blue xs:text-sm lg:text-xs font-extrabold flex items-center justify-end">{skillPressed}</div>
             </div>
             <div className='w-full h-fit flex flex-col items-center justify-center xs:pt-3 sm:pt-3 lg:pt-0'>
-                <div className='w-fit h-full grid grid-cols-4 grid-rows-1 px-2 py-2 xs:gap-x-1 xs:gap-y-1 lg:gap-x-1 lg:gap-y-1'>
+                <div className='w-fit h-full grid grid-cols-5 grid-rows-1 px-2 py-2 xs:gap-x-1 xs:gap-y-1 lg:gap-x-1 lg:gap-y-1'>
                     <EducationAndToolBadge name={"B.A.Sc Computer Engineering Queens University"} img={queens_eng} link={"https://smithengineering.queensu.ca/ece/undergraduate/computer-engineering/index.html"} />
+                    <EducationAndToolBadge name={"PL-900 Certified"} img={ai_900_img} link={"https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification"} />
                     <EducationAndToolBadge name={"PL-200 Certified"} img={pl_200_img} link={"https://learn.microsoft.com/en-us/credentials/certifications/power-platform-functional-consultant-associate/?practice-assessment-type=certification"} />
                     <EducationAndToolBadge name={"PL-300 Certified"} img={pl_300_img} link={"https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/?practice-assessment-type=certification"} />
                     <EducationAndToolBadge name={"PL-900 Certified"} img={pl_900_img} link={"https://learn.microsoft.com/en-us/credentials/certifications/power-platform-fundamentals/?practice-assessment-type=certification"} />
