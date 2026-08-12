@@ -12,12 +12,17 @@ const Contact = () => {
     })
 
     const sendEmail = async () => {
+        if (!formData.name.trim() || !formData.message.trim() || !formData.contact.trim()) {
+            toast("Cannot send until all required fields are filled out.");
+            return;
+        }
+
         await emailjs.send('service_9cm612i', 'template_kt5ihsa', formData, "uAZqooKamZXIcA_qD")
-        .then(async function() {
-            toast("success");
-        }).catch(async function() {
-            toast("Could not send email, please try again!")
-        });
+            .then(async function() {
+                toast("success");
+            }).catch(async function() {
+                toast("Could not send email, please try again!")
+            });
     }
 
 
