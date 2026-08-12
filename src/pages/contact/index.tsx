@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import Contact from 'src/components/contact/contact'
-import { AiOutlineArrowUp } from 'react-icons/ai';
 
 const ContactSection = ({ 
     setHoverState, 

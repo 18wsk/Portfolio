@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Socials from '../../components/landing/socials'
 import { AiOutlineDownload } from 'react-icons/ai';
 
@@ -11,7 +11,7 @@ const LandingSection = (
         setHoverState(hov: string): void
     }) => {
     const pfp =  require("../../assets/will_pfp.jpg");
-    const resume = require("../../assets/william_kennedy_resume_2025.pdf");
+    const resume = require("../../assets/william_kennedy_resume_2026.pdf");
 
     const [text, setText] = useState("Full Stack Developer");
 

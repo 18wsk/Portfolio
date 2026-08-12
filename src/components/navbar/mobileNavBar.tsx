@@ -1,7 +1,6 @@
 import { Menu, Transition } from '@headlessui/react'
 import { FC, useEffect } from 'react'
 import { AiOutlineLinkedin, AiOutlineMenu } from 'react-icons/ai'
-import { BsTwitter } from 'react-icons/bs';
 import { FiGithub } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 

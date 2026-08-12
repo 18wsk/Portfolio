@@ -4,7 +4,6 @@ import { AiOutlineLinkedin } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
 const Socials = () => {
-    const x = require("../../assets/x.png");
     return (
         <div className="flex flex-row gap-x-6">
             <Link 
