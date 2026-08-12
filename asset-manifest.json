@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.00507878.css",
-    "main.js": "/Portfolio/static/js/main.8226aed7.js",
+    "main.css": "/Portfolio/static/css/main.4bad9717.css",
+    "main.js": "/Portfolio/static/js/main.12c1d06b.js",
     "static/media/thegrizzlygrill-pc.PNG": "/Portfolio/static/media/thegrizzlygrill-pc.47279be42b2fca0eeac8.PNG",
-    "static/media/william_kennedy_resume_2025.pdf": "/Portfolio/static/media/william_kennedy_resume_2025.7fa6934a938dc8e7a481.pdf",
     "static/media/will_pfp.jpg": "/Portfolio/static/media/will_pfp.4e60ed2cfbce23ba6046.jpg",
+    "static/media/william_kennedy_resume_2026.pdf": "/Portfolio/static/media/william_kennedy_resume_2026.9d3da0ff34a1aedf07c7.pdf",
     "static/media/eng.jpg": "/Portfolio/static/media/eng.b21c4a122e855e3e9953.jpg",
-    "static/media/x.png": "/Portfolio/static/media/x.4d73a49285dbe9cac801.png",
     "static/media/docQshare.png": "/Portfolio/static/media/docQshare.4423d8440386a67ead25.png",
     "static/media/dev.png": "/Portfolio/static/media/dev.ad363af87c1a1350f1ea.png",
     "static/media/openai-iphone.JPG": "/Portfolio/static/media/openai-iphone.aed9af797b703e9419e8.JPG",
@@ -14,11 +13,11 @@
     "static/media/logo_nobg.png": "/Portfolio/static/media/logo_nobg.261b5cb8463b1353f109.png",
     "static/media/Transport-Canada.jpg": "/Portfolio/static/media/Transport-Canada.cd96436e86309f406daa.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.00507878.css.map": "/Portfolio/static/css/main.00507878.css.map",
-    "main.8226aed7.js.map": "/Portfolio/static/js/main.8226aed7.js.map"
+    "main.4bad9717.css.map": "/Portfolio/static/css/main.4bad9717.css.map",
+    "main.12c1d06b.js.map": "/Portfolio/static/js/main.12c1d06b.js.map"
   },
   "entrypoints": [
-    "static/css/main.00507878.css",
-    "static/js/main.8226aed7.js"
+    "static/css/main.4bad9717.css",
+    "static/js/main.12c1d06b.js"
   ]
 }
